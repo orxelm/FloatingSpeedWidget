@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		794BFE4A1DEAE27C0004CDF4 /* FloatingSpeedWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794BFE491DEAE27C0004CDF4 /* FloatingSpeedWidget.swift */; };
 		79C7F8211DEADFF00057889A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C7F8201DEADFF00057889A /* AppDelegate.swift */; };
 		79C7F8231DEADFF00057889A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C7F8221DEADFF00057889A /* ViewController.swift */; };
 		79C7F8261DEADFF00057889A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79C7F8241DEADFF00057889A /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		794BFE491DEAE27C0004CDF4 /* FloatingSpeedWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FloatingSpeedWidget.swift; path = Source/FloatingSpeedWidget.swift; sourceTree = "<group>"; };
 		79C7F81D1DEADFF00057889A /* FloatingSpeedWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FloatingSpeedWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79C7F8201DEADFF00057889A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79C7F8221DEADFF00057889A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,10 +79,9 @@
 		79C7F81F1DEADFF00057889A /* FloatingSpeedWidget */ = {
 			isa = PBXGroup;
 			children = (
+				79C7F8221DEADFF00057889A /* ViewController.swift */,
 				79C7F8411DEAE01D0057889A /* Source */,
 				79C7F8401DEADFF80057889A /* Resources */,
-				79C7F8221DEADFF00057889A /* ViewController.swift */,
-				79C7F8241DEADFF00057889A /* Main.storyboard */,
 			);
 			path = FloatingSpeedWidget;
 			sourceTree = "<group>";
@@ -97,6 +98,7 @@
 		79C7F8401DEADFF80057889A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				79C7F8241DEADFF00057889A /* Main.storyboard */,
 				79C7F8201DEADFF00057889A /* AppDelegate.swift */,
 				79C7F8271DEADFF00057889A /* Assets.xcassets */,
 				79C7F8291DEADFF00057889A /* LaunchScreen.storyboard */,
@@ -108,6 +110,7 @@
 		79C7F8411DEAE01D0057889A /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				794BFE491DEAE27C0004CDF4 /* FloatingSpeedWidget.swift */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			files = (
 				79C7F8231DEADFF00057889A /* ViewController.swift in Sources */,
 				79C7F8211DEADFF00057889A /* AppDelegate.swift in Sources */,
+				794BFE4A1DEAE27C0004CDF4 /* FloatingSpeedWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
