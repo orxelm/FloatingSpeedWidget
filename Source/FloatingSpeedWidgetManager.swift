@@ -54,6 +54,7 @@ public class FloatingSpeedWidgetManager: NSObject {
     // MARK: - Public
     
     public func updateSpeed(speed: Double) {
+        guard speed >= 0 else { return }
         self.floatingWidgetView?.speed = speed
     }
 
