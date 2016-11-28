@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		794BFE4A1DEAE27C0004CDF4 /* FloatingSpeedWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794BFE491DEAE27C0004CDF4 /* FloatingSpeedWidget.swift */; };
 		79C7F8211DEADFF00057889A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C7F8201DEADFF00057889A /* AppDelegate.swift */; };
-		79C7F8231DEADFF00057889A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C7F8221DEADFF00057889A /* ViewController.swift */; };
+		79C7F8231DEADFF00057889A /* FloatingSpeedWidgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C7F8221DEADFF00057889A /* FloatingSpeedWidgetViewController.swift */; };
 		79C7F8261DEADFF00057889A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79C7F8241DEADFF00057889A /* Main.storyboard */; };
 		79C7F8281DEADFF00057889A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79C7F8271DEADFF00057889A /* Assets.xcassets */; };
 		79C7F82B1DEADFF00057889A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79C7F8291DEADFF00057889A /* LaunchScreen.storyboard */; };
 		79C7F8361DEADFF00057889A /* FloatingSpeedWidgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C7F8351DEADFF00057889A /* FloatingSpeedWidgetTests.swift */; };
+		85F04044C305C1B04BFEC019 /* Pods_FloatingSpeedWidgetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC45F5F357BA669B74611814 /* Pods_FloatingSpeedWidgetTests.framework */; };
+		9A94A2F42AEED595AF1A53B1 /* Pods_FloatingSpeedWidget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8786A631B6AD8C12DF3DBD94 /* Pods_FloatingSpeedWidget.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,10 +29,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7339B35D5A7F843F8AEC96EE /* Pods-FloatingSpeedWidgetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FloatingSpeedWidgetTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FloatingSpeedWidgetTests/Pods-FloatingSpeedWidgetTests.release.xcconfig"; sourceTree = "<group>"; };
 		794BFE491DEAE27C0004CDF4 /* FloatingSpeedWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FloatingSpeedWidget.swift; path = Source/FloatingSpeedWidget.swift; sourceTree = "<group>"; };
 		79C7F81D1DEADFF00057889A /* FloatingSpeedWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FloatingSpeedWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79C7F8201DEADFF00057889A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		79C7F8221DEADFF00057889A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		79C7F8221DEADFF00057889A /* FloatingSpeedWidgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingSpeedWidgetViewController.swift; sourceTree = "<group>"; };
 		79C7F8251DEADFF00057889A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		79C7F8271DEADFF00057889A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79C7F82A1DEADFF00057889A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +41,11 @@
 		79C7F8311DEADFF00057889A /* FloatingSpeedWidgetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FloatingSpeedWidgetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79C7F8351DEADFF00057889A /* FloatingSpeedWidgetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingSpeedWidgetTests.swift; sourceTree = "<group>"; };
 		79C7F8371DEADFF00057889A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8786A631B6AD8C12DF3DBD94 /* Pods_FloatingSpeedWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FloatingSpeedWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AC888D42B1E3057A26BA0B9 /* Pods-FloatingSpeedWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FloatingSpeedWidget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FloatingSpeedWidget/Pods-FloatingSpeedWidget.debug.xcconfig"; sourceTree = "<group>"; };
+		C33CF3CD3A48D880DCDE695D /* Pods-FloatingSpeedWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FloatingSpeedWidget.release.xcconfig"; path = "Pods/Target Support Files/Pods-FloatingSpeedWidget/Pods-FloatingSpeedWidget.release.xcconfig"; sourceTree = "<group>"; };
+		DEDE1BE978BE0BD0F92BAA0C /* Pods-FloatingSpeedWidgetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FloatingSpeedWidgetTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FloatingSpeedWidgetTests/Pods-FloatingSpeedWidgetTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FC45F5F357BA669B74611814 /* Pods_FloatingSpeedWidgetTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FloatingSpeedWidgetTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A94A2F42AEED595AF1A53B1 /* Pods_FloatingSpeedWidget.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +61,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85F04044C305C1B04BFEC019 /* Pods_FloatingSpeedWidgetTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5686AC28569C738FDFC2A67E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9AC888D42B1E3057A26BA0B9 /* Pods-FloatingSpeedWidget.debug.xcconfig */,
+				C33CF3CD3A48D880DCDE695D /* Pods-FloatingSpeedWidget.release.xcconfig */,
+				DEDE1BE978BE0BD0F92BAA0C /* Pods-FloatingSpeedWidgetTests.debug.xcconfig */,
+				7339B35D5A7F843F8AEC96EE /* Pods-FloatingSpeedWidgetTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		79C7F8141DEADFF00057889A = {
 			isa = PBXGroup;
 			children = (
 				79C7F81F1DEADFF00057889A /* FloatingSpeedWidget */,
 				79C7F8341DEADFF00057889A /* FloatingSpeedWidgetTests */,
 				79C7F81E1DEADFF00057889A /* Products */,
+				5686AC28569C738FDFC2A67E /* Pods */,
+				DAA5E9BB715BD2CAC3830ABD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,7 +102,7 @@
 		79C7F81F1DEADFF00057889A /* FloatingSpeedWidget */ = {
 			isa = PBXGroup;
 			children = (
-				79C7F8221DEADFF00057889A /* ViewController.swift */,
+				79C7F8221DEADFF00057889A /* FloatingSpeedWidgetViewController.swift */,
 				79C7F8411DEAE01D0057889A /* Source */,
 				79C7F8401DEADFF80057889A /* Resources */,
 			);
@@ -115,6 +138,15 @@
 			name = Source;
 			sourceTree = "<group>";
 		};
+		DAA5E9BB715BD2CAC3830ABD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8786A631B6AD8C12DF3DBD94 /* Pods_FloatingSpeedWidget.framework */,
+				FC45F5F357BA669B74611814 /* Pods_FloatingSpeedWidgetTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,9 +154,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79C7F83A1DEADFF00057889A /* Build configuration list for PBXNativeTarget "FloatingSpeedWidget" */;
 			buildPhases = (
+				9B2BB0711D380A6BE2FAF296 /* [CP] Check Pods Manifest.lock */,
 				79C7F8191DEADFF00057889A /* Sources */,
 				79C7F81A1DEADFF00057889A /* Frameworks */,
 				79C7F81B1DEADFF00057889A /* Resources */,
+				EF5170E2AD7B6C7DB0F98148 /* [CP] Embed Pods Frameworks */,
+				F9EFAB8D53123B4E2B623F8B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -139,9 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79C7F83D1DEADFF00057889A /* Build configuration list for PBXNativeTarget "FloatingSpeedWidgetTests" */;
 			buildPhases = (
+				352540B3EB068BA75415352F /* [CP] Check Pods Manifest.lock */,
 				79C7F82D1DEADFF00057889A /* Sources */,
 				79C7F82E1DEADFF00057889A /* Frameworks */,
 				79C7F82F1DEADFF00057889A /* Resources */,
+				D2992252BC920C57DCF57B47 /* [CP] Embed Pods Frameworks */,
+				F151B39B460D56084AF13876 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,12 +252,105 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		352540B3EB068BA75415352F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9B2BB0711D380A6BE2FAF296 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D2992252BC920C57DCF57B47 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FloatingSpeedWidgetTests/Pods-FloatingSpeedWidgetTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF5170E2AD7B6C7DB0F98148 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FloatingSpeedWidget/Pods-FloatingSpeedWidget-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F151B39B460D56084AF13876 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FloatingSpeedWidgetTests/Pods-FloatingSpeedWidgetTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9EFAB8D53123B4E2B623F8B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FloatingSpeedWidget/Pods-FloatingSpeedWidget-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		79C7F8191DEADFF00057889A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79C7F8231DEADFF00057889A /* ViewController.swift in Sources */,
+				79C7F8231DEADFF00057889A /* FloatingSpeedWidgetViewController.swift in Sources */,
 				79C7F8211DEADFF00057889A /* AppDelegate.swift in Sources */,
 				794BFE4A1DEAE27C0004CDF4 /* FloatingSpeedWidget.swift in Sources */,
 			);
@@ -356,6 +487,7 @@
 		};
 		79C7F83B1DEADFF00057889A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AC888D42B1E3057A26BA0B9 /* Pods-FloatingSpeedWidget.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C89H6694JA;
@@ -370,6 +502,7 @@
 		};
 		79C7F83C1DEADFF00057889A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C33CF3CD3A48D880DCDE695D /* Pods-FloatingSpeedWidget.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = C89H6694JA;
@@ -384,6 +517,7 @@
 		};
 		79C7F83E1DEADFF00057889A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEDE1BE978BE0BD0F92BAA0C /* Pods-FloatingSpeedWidgetTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -398,6 +532,7 @@
 		};
 		79C7F83F1DEADFF00057889A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7339B35D5A7F843F8AEC96EE /* Pods-FloatingSpeedWidgetTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

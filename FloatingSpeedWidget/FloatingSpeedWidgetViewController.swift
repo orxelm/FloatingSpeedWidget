@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  FloatingSpeedWidgetViewController.swift
 //  FloatingSpeedWidget
 //
 //  Created by Or Elmaliah on 27/11/2016.
@@ -8,7 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+protocol FloatingSpeedWidgetDelegate {
+    func floatingSpeedWidgetShouldChangeSpeed(speed: Double)
+}
+
+class FloatingSpeedWidgetViewController: UIViewController {
 
     private var floatingWidget: FloatingSpeedWidget!
     private var snapBehavior: UISnapBehavior!

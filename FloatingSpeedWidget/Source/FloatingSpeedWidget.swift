@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FormatterKit
 
 enum FloatingSpeedWidgetAnchor {
     case bottomLeft, topLeft, bottomRight, topRight
@@ -16,10 +17,18 @@ private let MARGIN_FROM_BOUNDS: CGFloat = 50
 
 class FloatingSpeedWidget: UIView {
     
+    private var speedLable: UILabel!
+    private var unitLable: UILabel!
     private var centerPoint: CGPoint {
         return CGPoint(x: self.bounds.width/2, y: self.bounds.height/2)
     }
     
+    var speed: Double = 0 {
+        didSet {
+            guard self.speedLable != nil else { return }
+            self.setFormattedSpeed()
+        }
+    }
     // MARK: - Init
     
     init(size: CGSize, anchorPoint: FloatingSpeedWidgetAnchor) {
@@ -56,26 +65,49 @@ class FloatingSpeedWidget: UIView {
         self.layer.shadowOffset = CGSize(width: 0, height: 1)
         
         // Number label
-        let numLable = UILabel()
-        numLable.font = UIFont.systemFont(ofSize: 24)
-        numLable.text = "35"
-        numLable.sizeToFit()
-        numLable.center = self.centerPoint
-        numLable.textColor = UIColor.white
-        self.addSubview(numLable)
+        let speedLable = UILabel()
+        speedLable.font = UIFont.systemFont(ofSize: 24)
+        speedLable.center = self.centerPoint
+        speedLable.textColor = UIColor.white
+        speedLable.translatesAutoresizingMaskIntoConstraints = false
+        self.addSubview(speedLable)
+        self.speedLable = speedLable
+        
+        let speedLableCenterxConstraint = NSLayoutConstraint(item: speedLable, attribute: .centerX, relatedBy: .equal, toItem: self, attribute: .centerX, multiplier: 1, constant: 0)
+        let speedLableCenteryConstraint = NSLayoutConstraint(item: speedLable, attribute: .centerY, relatedBy: .equal, toItem: self, attribute: .centerY, multiplier: 1, constant: -4)
+        self.addConstraints([speedLableCenterxConstraint, speedLableCenteryConstraint])
         
         // Unit label
         let unitLable = UILabel()
         unitLable.font = UIFont.systemFont(ofSize: 13)
-        unitLable.text = "mph"
-        numLable.sizeToFit()
-        numLable.center = self.centerPoint
-        numLable.textColor = UIColor.white
+        unitLable.center = self.centerPoint
+        unitLable.textColor = UIColor.white
+        unitLable.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(unitLable)
+        self.unitLable = unitLable
+        
+        let unitLableCenterxConstraint = NSLayoutConstraint(item: unitLable, attribute: .centerX, relatedBy: .equal, toItem: speedLable, attribute: .centerX, multiplier: 1, constant: 0)
+        let unitLableTopConstraint = NSLayoutConstraint(item: unitLable, attribute: .top, relatedBy: .equal, toItem: speedLable, attribute: .bottom, multiplier: 1, constant: -4)
+        self.addConstraints([unitLableCenterxConstraint, unitLableTopConstraint])
+        
+        self.setFormattedSpeed()
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    // MARK: - Private
+    
+    private func setFormattedSpeed() {
+        let locationFormatter = TTTLocationFormatter()
+        locationFormatter.numberFormatter.maximumFractionDigits = 0
+        
+        if let speedString = locationFormatter.string(fromSpeed: self.speed) {
+            let speedComponents = speedString.components(separatedBy: " ")
+            self.speedLable.text = speedComponents.first
+            self.unitLable.text = speedComponents.last
+        }
     }
 }
 

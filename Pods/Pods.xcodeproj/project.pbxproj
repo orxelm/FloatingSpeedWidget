@@ -1,0 +1,989 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0019D02BD813C4A6A96E1ACDCC108753 /* TTTAddressFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 26A9FCC354B3B4AD7639FF3658790547 /* TTTAddressFormatter.m */; };
+		04E497EC6569B55354D7449E7B3A1C48 /* TTTUnitOfInformationFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 95F4DB633D3C573DB8254F68CCE80D87 /* TTTUnitOfInformationFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		072133874B54DD5B9B88A4A7DFA2D69C /* es.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 79DC020F82FA9DD4A35ED0A53119332A /* es.lproj */; };
+		0BF8C7332644132C98865682C8FBAF8B /* ms.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 073EFE98D876785711E2A8AA77312135 /* ms.lproj */; };
+		0FC5ECA56183F2C12E0ACD354251870F /* TTTLocationFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 14CD6DFCC3AA588DA571613BE569184B /* TTTLocationFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		126EAB965260374C0E1B72B35FED4A1B /* TTTURLRequestFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 161D9391DFBAAEF1A757601CFFC6989D /* TTTURLRequestFormatter.m */; };
+		206F3F78C2BC5944C219136EB44FC7E1 /* th.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 69ED06E757E1006C171F8A84275B178C /* th.lproj */; };
+		24099F4ADBAD16EC7E1E52ECD2DEB3D9 /* vi.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 555E63936AAC3A98B6A8BFA0C8949877 /* vi.lproj */; };
+		3CF941444D462EB4002D88389E275C7B /* TTTTimeIntervalFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 393A55E9E5ECBD9D47EAC0B97C22F4B4 /* TTTTimeIntervalFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D5263DC78327E2CA49EFF71CC026593 /* cs.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 020DAF2F945AE80F032349E5ED3A209F /* cs.lproj */; };
+		3FA7B84E5C5E25F4EC3926D428E05FA3 /* FormatterKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D038B61E29FD32322DDF853406FE7537 /* FormatterKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		407216F70BF85F7254646DB7305C90D5 /* id.lproj in Resources */ = {isa = PBXBuildFile; fileRef = E9F239694301AEE4FC63542B1E2559C1 /* id.lproj */; };
+		40DD3E85ABDB586F65AE6B81DE595D89 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D32AD68B39563F659EC5D115546473CB /* Foundation.framework */; };
+		41434468B738A96D10980E3C92FFF9AA /* ar.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 95F1B8DC0EFBC7838403F9984B1707B0 /* ar.lproj */; };
+		4A740A41B49676DA83EF3D0E7CA5DE52 /* Pods-FloatingSpeedWidgetTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 15E088016C8C3F205F1420089CFC16A2 /* Pods-FloatingSpeedWidgetTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54AB8664781A998869CEB1A338E216E5 /* TTTAddressFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 23633BEF2791474C676BB82F3229299E /* TTTAddressFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B8EEB025FA3DDD13AF23102DC58FD61 /* ja.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 90F63BB4C36FF42A3C4FDF74ACE55D43 /* ja.lproj */; };
+		5EC395F9993B0FACA3F376BFD511D12F /* TTTColorFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C077513AB6E7D2123F2BDB760D1872D /* TTTColorFormatter.m */; };
+		67548940F6E915D792E4DBEB6F96461A /* nn.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 706A81DBF7C2DDF5E8380D300D6FDC99 /* nn.lproj */; };
+		67F3036FC9C8E0943D13FBAA57152935 /* Pods-FloatingSpeedWidget-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B9289EEF61A19C07544EFA680653C7 /* Pods-FloatingSpeedWidget-dummy.m */; };
+		69ADF81E89AFD502088F534C2C6A3795 /* ko.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 5073B6D441CCAA8C09FDD68F2D67148D /* ko.lproj */; };
+		6BA94203B4AC2854FB3EE00ADC8FD1E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D32AD68B39563F659EC5D115546473CB /* Foundation.framework */; };
+		6CBF2FE272693B7CD806479484DDBE22 /* he.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 1CFC6E484B22397B05E9396192B55551 /* he.lproj */; };
+		6E21BF6E6775169963A789D2DC891907 /* TTTTimeIntervalFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BFCFD597B3644453CE0478ADA24A3ED /* TTTTimeIntervalFormatter.m */; };
+		74FDCDE74D3669BDF057932FA1864D59 /* TTTOrdinalNumberFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8849A90A8615A42E49F05090F475B8D9 /* TTTOrdinalNumberFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78C13FC6048C1FD7CB539441B3898B40 /* Pods-FloatingSpeedWidgetTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3FA83AA7D22B424A0546BFFDDE6FE1F /* Pods-FloatingSpeedWidgetTests-dummy.m */; };
+		7ACC62C018CC60338455C13D97F995BF /* sv.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 32F3778DC74430B9A31EEA9AA4FD7F3D /* sv.lproj */; };
+		7E23A06F94CE455F9831D436AD56D40B /* ru.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 65DED61FEC721BF1001EBE187F8163A4 /* ru.lproj */; };
+		819B7458DDDF852D5857AC7C596B73B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D32AD68B39563F659EC5D115546473CB /* Foundation.framework */; };
+		825145E5D98EDA199ACFD45CE36B242E /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAED6C7F6923BF72C45C9BB0F7708979 /* AddressBook.framework */; };
+		8335587206D8687445B2D14937AEA72B /* da.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 37478790100F24E8EEA92F8AF12850B3 /* da.lproj */; };
+		85FF67D90F1E79DEE815F3ED893C69F4 /* TTTArrayFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C01AC9313D1C6DF60AA63D3B505A133 /* TTTArrayFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9094766ECD24DB8063CA6C4432099174 /* TTTNameFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C3AA31CDA7CAFA45FA966C7E1678CD /* TTTNameFormatter.m */; };
+		968379337F4C4B64D70CA5F4B143C7F7 /* FormatterKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BBFBA121D4215795D78D5DCE571CAB2A /* FormatterKit-dummy.m */; };
+		98686B31E5D1BAD719A0E2360B9AF50C /* TTTNameFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 75CA6E6A506097C0CAEB1D4C538C285E /* TTTNameFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CCB91E82D77548347C4FB3913E6C6A3 /* TTTOrdinalNumberFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ABED6C91666BDCFC4254C83DDB6129A /* TTTOrdinalNumberFormatter.m */; };
+		9F766A976F9C7B950DB5188D802BFD24 /* TTTUnitOfInformationFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A3C6A95F07B487373BFCE215B8F1D847 /* TTTUnitOfInformationFormatter.m */; };
+		A2521F2F662F6B34EA5076B7111B5B4F /* it.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 9B85AA1C02740BC192FCEAEF0CB367DF /* it.lproj */; };
+		A755A13EF8406C1D7AB9F8D91EAAC6A5 /* pt.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 741BA492DD36A7446ADE04192E32FB10 /* pt.lproj */; };
+		A7FE2089F44310CA35209805D5468FD8 /* fr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 4EFCB88DDF087299307AFBA671ACC726 /* fr.lproj */; };
+		AA4ACC086C9844F323C31980F95AC230 /* uk.lproj in Resources */ = {isa = PBXBuildFile; fileRef = F90856DC618E05D0A8B1260C9248E0A1 /* uk.lproj */; };
+		AB100F68F45BE00A489A1444D4F43A51 /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 010AF7F6D9661035D90871E83243D904 /* en.lproj */; };
+		AB199D13C5505EDF4FB69A8D55BC28F4 /* de.lproj in Resources */ = {isa = PBXBuildFile; fileRef = AF4ED856F283C6DAB811FADDB09BFA8F /* de.lproj */; };
+		B4A8CEA73D7D43EAAA434ADEBE101157 /* tr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = E1AEC97F3C0A4C38EB6E78047EE61152 /* tr.lproj */; };
+		B9FF9A5D5CFD78E39AEDE141A1BF7AD4 /* nb.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 378C8A52BD9850D6BAD5568F191E07A9 /* nb.lproj */; };
+		BBD9E6FEAE9D43A3123CCE69624D1E26 /* hu.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 1ACFA29BB9D62D4F3C52348387488314 /* hu.lproj */; };
+		BD385B46FB90D6E86E7ED69237B3F680 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85AECD322BADB98916014E3B826C9C7C /* AddressBookUI.framework */; };
+		BDC52302A83E1C7098AFFEDD7182034C /* ca.lproj in Resources */ = {isa = PBXBuildFile; fileRef = D2DF0BB22FF47E906A8E786E75A2F58A /* ca.lproj */; };
+		CD2C07DABA1559DA561B17B02FB9EB10 /* zh-Hant.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 8F8A0E2ADCAF62DECC9CD2E59957E623 /* zh-Hant.lproj */; };
+		CE3EF64513C7E5C68F09CD524F29C9FC /* TTTArrayFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3018EEF14674C5C952DCD9BA9F2854 /* TTTArrayFormatter.m */; };
+		DE819EA4605A1476B55DDCC5BC679C2A /* ro.lproj in Resources */ = {isa = PBXBuildFile; fileRef = EABC5BD77CA9800FD7995603CE447CE2 /* ro.lproj */; };
+		E73D72EABA7464345B4013D4F181375A /* Pods-FloatingSpeedWidget-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A8D5FEA265D260BA17D9BDDD718BBE2 /* Pods-FloatingSpeedWidget-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED54921CE6EE074BBB39B6CC42219655 /* el.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 33B113C896531B4AB4281FB462304A9D /* el.lproj */; };
+		F1092A9D2F857F13C1C6E57D6F15ADE4 /* pt_BR.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 0F4B7079C44E2B2AA96F554E7662B175 /* pt_BR.lproj */; };
+		F3966DC2AEFF27FC62C3E013BF890FD5 /* TTTLocationFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC63EE77A585F089B773739B35EDED1 /* TTTLocationFormatter.m */; };
+		F59C568F8480F486159937DC5BC88EBC /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 41F2FAE1D2056CA685A861E30AFF718E /* zh-Hans.lproj */; };
+		F7DF9F30EF485AC7C3615C5FCA165429 /* pl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 6B762541EC36F0E3040BC800EFB2F470 /* pl.lproj */; };
+		F83D2B4919D49EE6C32A3F5014F0D178 /* nl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 7C8D56AFAC54DD2D7A0B41920F7F6CC0 /* nl.lproj */; };
+		FB49420379CB8FF4CE2A2D5D34E4578C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5CC822FECEAF75F2BAC5CD0EACB027F /* CoreLocation.framework */; };
+		FC406CCF11C2A4F87DC2C2D744ADD99B /* TTTURLRequestFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA5D9EE223BA194F606D0260F4204B6 /* TTTURLRequestFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE0E199CD662053C229C0C2ADF42F74C /* TTTColorFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = AC33F9B00522E7C090C3CF5BDA75EC91 /* TTTColorFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		399E5FAB01D7FCC7C7F7CF4B7831519D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B50C56E7913307EC73740BB45D44C0EE;
+			remoteInfo = FormatterKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		010AF7F6D9661035D90871E83243D904 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = en.lproj; path = Localizations/en.lproj; sourceTree = "<group>"; };
+		020DAF2F945AE80F032349E5ED3A209F /* cs.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = cs.lproj; path = Localizations/cs.lproj; sourceTree = "<group>"; };
+		073EFE98D876785711E2A8AA77312135 /* ms.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ms.lproj; path = Localizations/ms.lproj; sourceTree = "<group>"; };
+		0C01AC9313D1C6DF60AA63D3B505A133 /* TTTArrayFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTTArrayFormatter.h; path = FormatterKit/TTTArrayFormatter.h; sourceTree = "<group>"; };
+		0C3018EEF14674C5C952DCD9BA9F2854 /* TTTArrayFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTTArrayFormatter.m; path = FormatterKit/TTTArrayFormatter.m; sourceTree = "<group>"; };
+		0F4B7079C44E2B2AA96F554E7662B175 /* pt_BR.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = pt_BR.lproj; path = Localizations/pt_BR.lproj; sourceTree = "<group>"; };
+		13BBBF05E14599A8ED6E729DAC282907 /* FormatterKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FormatterKit.modulemap; sourceTree = "<group>"; };
+		14CD6DFCC3AA588DA571613BE569184B /* TTTLocationFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTTLocationFormatter.h; path = FormatterKit/TTTLocationFormatter.h; sourceTree = "<group>"; };
+		15E088016C8C3F205F1420089CFC16A2 /* Pods-FloatingSpeedWidgetTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FloatingSpeedWidgetTests-umbrella.h"; sourceTree = "<group>"; };
+		161D9391DFBAAEF1A757601CFFC6989D /* TTTURLRequestFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTTURLRequestFormatter.m; path = FormatterKit/TTTURLRequestFormatter.m; sourceTree = "<group>"; };
+		19E426BF20B08F9D36D65020A84C2848 /* Pods_FloatingSpeedWidget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FloatingSpeedWidget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1ACFA29BB9D62D4F3C52348387488314 /* hu.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = hu.lproj; path = Localizations/hu.lproj; sourceTree = "<group>"; };
+		1C1591A53D8A4CF817D79E7FD330AF93 /* Pods-FloatingSpeedWidget-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FloatingSpeedWidget-acknowledgements.plist"; sourceTree = "<group>"; };
+		1CFC6E484B22397B05E9396192B55551 /* he.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = he.lproj; path = Localizations/he.lproj; sourceTree = "<group>"; };
+		1FA5D9EE223BA194F606D0260F4204B6 /* TTTURLRequestFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTTURLRequestFormatter.h; path = FormatterKit/TTTURLRequestFormatter.h; sourceTree = "<group>"; };
+		23633BEF2791474C676BB82F3229299E /* TTTAddressFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTTAddressFormatter.h; path = FormatterKit/TTTAddressFormatter.h; sourceTree = "<group>"; };
+		26A9FCC354B3B4AD7639FF3658790547 /* TTTAddressFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTTAddressFormatter.m; path = FormatterKit/TTTAddressFormatter.m; sourceTree = "<group>"; };
+		2C8ADFA0A1CCDCA32E410E876BB93E57 /* Pods_FloatingSpeedWidgetTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FloatingSpeedWidgetTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EFEC6F161C86B5422822DB92E232562 /* FormatterKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FormatterKit-prefix.pch"; sourceTree = "<group>"; };
+		32F3778DC74430B9A31EEA9AA4FD7F3D /* sv.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = sv.lproj; path = Localizations/sv.lproj; sourceTree = "<group>"; };
+		33B113C896531B4AB4281FB462304A9D /* el.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = el.lproj; path = Localizations/el.lproj; sourceTree = "<group>"; };
+		37478790100F24E8EEA92F8AF12850B3 /* da.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = da.lproj; path = Localizations/da.lproj; sourceTree = "<group>"; };
+		378C8A52BD9850D6BAD5568F191E07A9 /* nb.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = nb.lproj; path = Localizations/nb.lproj; sourceTree = "<group>"; };
+		393A55E9E5ECBD9D47EAC0B97C22F4B4 /* TTTTimeIntervalFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTTTimeIntervalFormatter.h; path = FormatterKit/TTTTimeIntervalFormatter.h; sourceTree = "<group>"; };
+		3BFCFD597B3644453CE0478ADA24A3ED /* TTTTimeIntervalFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTTTimeIntervalFormatter.m; path = FormatterKit/TTTTimeIntervalFormatter.m; sourceTree = "<group>"; };
+		3C077513AB6E7D2123F2BDB760D1872D /* TTTColorFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTTColorFormatter.m; path = FormatterKit/TTTColorFormatter.m; sourceTree = "<group>"; };
+		3E6F95D34DD26B818D077974E9558A52 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40E06079333CF9BB73CE1654BAABEE80 /* Pods-FloatingSpeedWidgetTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FloatingSpeedWidgetTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		41F2FAE1D2056CA685A861E30AFF718E /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = "zh-Hans.lproj"; path = "Localizations/zh-Hans.lproj"; sourceTree = "<group>"; };
+		42C3AA31CDA7CAFA45FA966C7E1678CD /* TTTNameFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTTNameFormatter.m; path = FormatterKit/TTTNameFormatter.m; sourceTree = "<group>"; };
+		48B9289EEF61A19C07544EFA680653C7 /* Pods-FloatingSpeedWidget-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FloatingSpeedWidget-dummy.m"; sourceTree = "<group>"; };
+		4BF724114FE3A089E5E9165AF022EF85 /* Pods-FloatingSpeedWidget.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FloatingSpeedWidget.modulemap"; sourceTree = "<group>"; };
+		4EFCB88DDF087299307AFBA671ACC726 /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = fr.lproj; path = Localizations/fr.lproj; sourceTree = "<group>"; };
+		5073B6D441CCAA8C09FDD68F2D67148D /* ko.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ko.lproj; path = Localizations/ko.lproj; sourceTree = "<group>"; };
+		555E63936AAC3A98B6A8BFA0C8949877 /* vi.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = vi.lproj; path = Localizations/vi.lproj; sourceTree = "<group>"; };
+		5CD74771DF2CC8263FF84A3B899BDD9F /* Pods-FloatingSpeedWidget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FloatingSpeedWidget.debug.xcconfig"; sourceTree = "<group>"; };
+		65DED61FEC721BF1001EBE187F8163A4 /* ru.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ru.lproj; path = Localizations/ru.lproj; sourceTree = "<group>"; };
+		69ED06E757E1006C171F8A84275B178C /* th.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = th.lproj; path = Localizations/th.lproj; sourceTree = "<group>"; };
+		6B762541EC36F0E3040BC800EFB2F470 /* pl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = pl.lproj; path = Localizations/pl.lproj; sourceTree = "<group>"; };
+		706A81DBF7C2DDF5E8380D300D6FDC99 /* nn.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = nn.lproj; path = Localizations/nn.lproj; sourceTree = "<group>"; };
+		741BA492DD36A7446ADE04192E32FB10 /* pt.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = pt.lproj; path = Localizations/pt.lproj; sourceTree = "<group>"; };
+		75CA6E6A506097C0CAEB1D4C538C285E /* TTTNameFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTTNameFormatter.h; path = FormatterKit/TTTNameFormatter.h; sourceTree = "<group>"; };
+		79DC020F82FA9DD4A35ED0A53119332A /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = es.lproj; path = Localizations/es.lproj; sourceTree = "<group>"; };
+		7ABED6C91666BDCFC4254C83DDB6129A /* TTTOrdinalNumberFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTTOrdinalNumberFormatter.m; path = FormatterKit/TTTOrdinalNumberFormatter.m; sourceTree = "<group>"; };
+		7BC8C740C4FD5F5945441100236FA787 /* Pods-FloatingSpeedWidget-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FloatingSpeedWidget-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7C8D56AFAC54DD2D7A0B41920F7F6CC0 /* nl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = nl.lproj; path = Localizations/nl.lproj; sourceTree = "<group>"; };
+		85AECD322BADB98916014E3B826C9C7C /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/AddressBookUI.framework; sourceTree = DEVELOPER_DIR; };
+		86EE10719F3784734E665AFEF2EEAC50 /* Pods-FloatingSpeedWidgetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FloatingSpeedWidgetTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8849A90A8615A42E49F05090F475B8D9 /* TTTOrdinalNumberFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTTOrdinalNumberFormatter.h; path = FormatterKit/TTTOrdinalNumberFormatter.h; sourceTree = "<group>"; };
+		8BC63EE77A585F089B773739B35EDED1 /* TTTLocationFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTTLocationFormatter.m; path = FormatterKit/TTTLocationFormatter.m; sourceTree = "<group>"; };
+		8D8A17C64549D012E65BAEC46EE1222B /* Pods-FloatingSpeedWidgetTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FloatingSpeedWidgetTests-resources.sh"; sourceTree = "<group>"; };
+		8F8A0E2ADCAF62DECC9CD2E59957E623 /* zh-Hant.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = "zh-Hant.lproj"; path = "Localizations/zh-Hant.lproj"; sourceTree = "<group>"; };
+		90F63BB4C36FF42A3C4FDF74ACE55D43 /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ja.lproj; path = Localizations/ja.lproj; sourceTree = "<group>"; };
+		91A92603413F6AD23E5CBF7E5BD37090 /* Pods-FloatingSpeedWidget-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FloatingSpeedWidget-resources.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95F1B8DC0EFBC7838403F9984B1707B0 /* ar.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ar.lproj; path = Localizations/ar.lproj; sourceTree = "<group>"; };
+		95F4DB633D3C573DB8254F68CCE80D87 /* TTTUnitOfInformationFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTTUnitOfInformationFormatter.h; path = FormatterKit/TTTUnitOfInformationFormatter.h; sourceTree = "<group>"; };
+		9A8D5FEA265D260BA17D9BDDD718BBE2 /* Pods-FloatingSpeedWidget-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FloatingSpeedWidget-umbrella.h"; sourceTree = "<group>"; };
+		9B85AA1C02740BC192FCEAEF0CB367DF /* it.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = it.lproj; path = Localizations/it.lproj; sourceTree = "<group>"; };
+		A3C6A95F07B487373BFCE215B8F1D847 /* TTTUnitOfInformationFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTTUnitOfInformationFormatter.m; path = FormatterKit/TTTUnitOfInformationFormatter.m; sourceTree = "<group>"; };
+		A6E00E01F52786A17A466A47C512D707 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC33F9B00522E7C090C3CF5BDA75EC91 /* TTTColorFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTTColorFormatter.h; path = FormatterKit/TTTColorFormatter.h; sourceTree = "<group>"; };
+		AF4ED856F283C6DAB811FADDB09BFA8F /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = de.lproj; path = Localizations/de.lproj; sourceTree = "<group>"; };
+		B4230F4F59532BC585D160D60B1B7AD0 /* Pods-FloatingSpeedWidgetTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FloatingSpeedWidgetTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BAED6C7F6923BF72C45C9BB0F7708979 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/AddressBook.framework; sourceTree = DEVELOPER_DIR; };
+		BBFBA121D4215795D78D5DCE571CAB2A /* FormatterKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FormatterKit-dummy.m"; sourceTree = "<group>"; };
+		C3FA83AA7D22B424A0546BFFDDE6FE1F /* Pods-FloatingSpeedWidgetTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FloatingSpeedWidgetTests-dummy.m"; sourceTree = "<group>"; };
+		C7F49B4F94C1EBC7FFE818D511B670CA /* Pods-FloatingSpeedWidgetTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FloatingSpeedWidgetTests-frameworks.sh"; sourceTree = "<group>"; };
+		D038B61E29FD32322DDF853406FE7537 /* FormatterKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FormatterKit-umbrella.h"; sourceTree = "<group>"; };
+		D2DF0BB22FF47E906A8E786E75A2F58A /* ca.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ca.lproj; path = Localizations/ca.lproj; sourceTree = "<group>"; };
+		D32AD68B39563F659EC5D115546473CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D3B1EFBE84594A605FD9614B7BDCB5C7 /* Pods-FloatingSpeedWidgetTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FloatingSpeedWidgetTests.modulemap"; sourceTree = "<group>"; };
+		D460B7AF29D4927B3CA51D9D488D6944 /* FormatterKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FormatterKit.xcconfig; sourceTree = "<group>"; };
+		D4DF0092AB203E51338E088DACDD579D /* Pods-FloatingSpeedWidget-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FloatingSpeedWidget-frameworks.sh"; sourceTree = "<group>"; };
+		DBBC3AA210A7E1529D252BE848841768 /* Pods-FloatingSpeedWidgetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FloatingSpeedWidgetTests.release.xcconfig"; sourceTree = "<group>"; };
+		E1AEC97F3C0A4C38EB6E78047EE61152 /* tr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = tr.lproj; path = Localizations/tr.lproj; sourceTree = "<group>"; };
+		E5CC822FECEAF75F2BAC5CD0EACB027F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		E9F239694301AEE4FC63542B1E2559C1 /* id.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = id.lproj; path = Localizations/id.lproj; sourceTree = "<group>"; };
+		EABC5BD77CA9800FD7995603CE447CE2 /* ro.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ro.lproj; path = Localizations/ro.lproj; sourceTree = "<group>"; };
+		EF563AA212A3B24A30C1FBAA0B27B18C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F203A266C647CF468D1043D11A4EA271 /* FormatterKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FormatterKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F293CF526810472111A862B72B775721 /* Pods-FloatingSpeedWidget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FloatingSpeedWidget.release.xcconfig"; sourceTree = "<group>"; };
+		F90856DC618E05D0A8B1260C9248E0A1 /* uk.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = uk.lproj; path = Localizations/uk.lproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D5C2B87C699E0C26D2F84C403567612 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				825145E5D98EDA199ACFD45CE36B242E /* AddressBook.framework in Frameworks */,
+				BD385B46FB90D6E86E7ED69237B3F680 /* AddressBookUI.framework in Frameworks */,
+				FB49420379CB8FF4CE2A2D5D34E4578C /* CoreLocation.framework in Frameworks */,
+				6BA94203B4AC2854FB3EE00ADC8FD1E7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B0701D0B0ADA8F58A038C2B45A2B34D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				819B7458DDDF852D5857AC7C596B73B0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8253EEEE83A2641BF3A2E2C5BD0E148F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40DD3E85ABDB586F65AE6B81DE595D89 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2723BB1B671A69B860C94912C77F19E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18F0ADCF12B62B0F8E696B5D673C9CA6 /* ArrayFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				0C01AC9313D1C6DF60AA63D3B505A133 /* TTTArrayFormatter.h */,
+				0C3018EEF14674C5C952DCD9BA9F2854 /* TTTArrayFormatter.m */,
+			);
+			name = ArrayFormatter;
+			sourceTree = "<group>";
+		};
+		2C6F30E3EB57E10C8E3D4E63C4A10FE7 /* ColorFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				AC33F9B00522E7C090C3CF5BDA75EC91 /* TTTColorFormatter.h */,
+				3C077513AB6E7D2123F2BDB760D1872D /* TTTColorFormatter.m */,
+			);
+			name = ColorFormatter;
+			sourceTree = "<group>";
+		};
+		47FF466E8C1FA29D17CBC309FDEDBA7E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				13BBBF05E14599A8ED6E729DAC282907 /* FormatterKit.modulemap */,
+				D460B7AF29D4927B3CA51D9D488D6944 /* FormatterKit.xcconfig */,
+				BBFBA121D4215795D78D5DCE571CAB2A /* FormatterKit-dummy.m */,
+				2EFEC6F161C86B5422822DB92E232562 /* FormatterKit-prefix.pch */,
+				D038B61E29FD32322DDF853406FE7537 /* FormatterKit-umbrella.h */,
+				A6E00E01F52786A17A466A47C512D707 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FormatterKit";
+			sourceTree = "<group>";
+		};
+		4AD83B3D586D1ADFE0AAC53AFBD023F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F4E5ACE93211F83590333C61BC5C6BF /* FormatterKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5F4E5ACE93211F83590333C61BC5C6BF /* FormatterKit */ = {
+			isa = PBXGroup;
+			children = (
+				C5292E4E3E1FF4029C68CF8E0C060206 /* AddressFormatter */,
+				18F0ADCF12B62B0F8E696B5D673C9CA6 /* ArrayFormatter */,
+				2C6F30E3EB57E10C8E3D4E63C4A10FE7 /* ColorFormatter */,
+				FA05287F8D70588403028BD4ECE87E93 /* LocationFormatter */,
+				C3743EBAEA7E622C5C8DD0461E7BEACD /* NameFormatter */,
+				E571163AD7F2743DA694058560F9D7B2 /* OrdinalNumberFormatter */,
+				E8BE86555D00092F6882B5C78BB582DA /* Resources */,
+				47FF466E8C1FA29D17CBC309FDEDBA7E /* Support Files */,
+				93C4A26B6D4A25423732D2B53E4F6EA0 /* TimeIntervalFormatter */,
+				6216B981B651FE6018D2B28F3BE1F688 /* UnitOfInformationFormatter */,
+				91EAF60D768093B7F30088D099559B38 /* URLRequestFormatter */,
+			);
+			path = FormatterKit;
+			sourceTree = "<group>";
+		};
+		6216B981B651FE6018D2B28F3BE1F688 /* UnitOfInformationFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				95F4DB633D3C573DB8254F68CCE80D87 /* TTTUnitOfInformationFormatter.h */,
+				A3C6A95F07B487373BFCE215B8F1D847 /* TTTUnitOfInformationFormatter.m */,
+			);
+			name = UnitOfInformationFormatter;
+			sourceTree = "<group>";
+		};
+		75EC4501780C0AF1AEED5036878BCF12 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				95F1B8DC0EFBC7838403F9984B1707B0 /* ar.lproj */,
+				D2DF0BB22FF47E906A8E786E75A2F58A /* ca.lproj */,
+				020DAF2F945AE80F032349E5ED3A209F /* cs.lproj */,
+				37478790100F24E8EEA92F8AF12850B3 /* da.lproj */,
+				AF4ED856F283C6DAB811FADDB09BFA8F /* de.lproj */,
+				33B113C896531B4AB4281FB462304A9D /* el.lproj */,
+				010AF7F6D9661035D90871E83243D904 /* en.lproj */,
+				79DC020F82FA9DD4A35ED0A53119332A /* es.lproj */,
+				4EFCB88DDF087299307AFBA671ACC726 /* fr.lproj */,
+				1CFC6E484B22397B05E9396192B55551 /* he.lproj */,
+				1ACFA29BB9D62D4F3C52348387488314 /* hu.lproj */,
+				E9F239694301AEE4FC63542B1E2559C1 /* id.lproj */,
+				9B85AA1C02740BC192FCEAEF0CB367DF /* it.lproj */,
+				90F63BB4C36FF42A3C4FDF74ACE55D43 /* ja.lproj */,
+				5073B6D441CCAA8C09FDD68F2D67148D /* ko.lproj */,
+				073EFE98D876785711E2A8AA77312135 /* ms.lproj */,
+				378C8A52BD9850D6BAD5568F191E07A9 /* nb.lproj */,
+				7C8D56AFAC54DD2D7A0B41920F7F6CC0 /* nl.lproj */,
+				706A81DBF7C2DDF5E8380D300D6FDC99 /* nn.lproj */,
+				6B762541EC36F0E3040BC800EFB2F470 /* pl.lproj */,
+				741BA492DD36A7446ADE04192E32FB10 /* pt.lproj */,
+				0F4B7079C44E2B2AA96F554E7662B175 /* pt_BR.lproj */,
+				EABC5BD77CA9800FD7995603CE447CE2 /* ro.lproj */,
+				65DED61FEC721BF1001EBE187F8163A4 /* ru.lproj */,
+				32F3778DC74430B9A31EEA9AA4FD7F3D /* sv.lproj */,
+				69ED06E757E1006C171F8A84275B178C /* th.lproj */,
+				E1AEC97F3C0A4C38EB6E78047EE61152 /* tr.lproj */,
+				F90856DC618E05D0A8B1260C9248E0A1 /* uk.lproj */,
+				555E63936AAC3A98B6A8BFA0C8949877 /* vi.lproj */,
+				41F2FAE1D2056CA685A861E30AFF718E /* zh-Hans.lproj */,
+				8F8A0E2ADCAF62DECC9CD2E59957E623 /* zh-Hant.lproj */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7C40A9E30D1E0743D12112CAA5BE69CE /* Pods-FloatingSpeedWidgetTests */ = {
+			isa = PBXGroup;
+			children = (
+				3E6F95D34DD26B818D077974E9558A52 /* Info.plist */,
+				D3B1EFBE84594A605FD9614B7BDCB5C7 /* Pods-FloatingSpeedWidgetTests.modulemap */,
+				40E06079333CF9BB73CE1654BAABEE80 /* Pods-FloatingSpeedWidgetTests-acknowledgements.markdown */,
+				B4230F4F59532BC585D160D60B1B7AD0 /* Pods-FloatingSpeedWidgetTests-acknowledgements.plist */,
+				C3FA83AA7D22B424A0546BFFDDE6FE1F /* Pods-FloatingSpeedWidgetTests-dummy.m */,
+				C7F49B4F94C1EBC7FFE818D511B670CA /* Pods-FloatingSpeedWidgetTests-frameworks.sh */,
+				8D8A17C64549D012E65BAEC46EE1222B /* Pods-FloatingSpeedWidgetTests-resources.sh */,
+				15E088016C8C3F205F1420089CFC16A2 /* Pods-FloatingSpeedWidgetTests-umbrella.h */,
+				86EE10719F3784734E665AFEF2EEAC50 /* Pods-FloatingSpeedWidgetTests.debug.xcconfig */,
+				DBBC3AA210A7E1529D252BE848841768 /* Pods-FloatingSpeedWidgetTests.release.xcconfig */,
+			);
+			name = "Pods-FloatingSpeedWidgetTests";
+			path = "Target Support Files/Pods-FloatingSpeedWidgetTests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
+				4AD83B3D586D1ADFE0AAC53AFBD023F0 /* Pods */,
+				BDD8E91A70033AC2060A4CD35DB7A40E /* Products */,
+				9F871F5748509B8CDFEAFF4E8D7C91E4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		91EAF60D768093B7F30088D099559B38 /* URLRequestFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				1FA5D9EE223BA194F606D0260F4204B6 /* TTTURLRequestFormatter.h */,
+				161D9391DFBAAEF1A757601CFFC6989D /* TTTURLRequestFormatter.m */,
+			);
+			name = URLRequestFormatter;
+			sourceTree = "<group>";
+		};
+		93C4A26B6D4A25423732D2B53E4F6EA0 /* TimeIntervalFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				393A55E9E5ECBD9D47EAC0B97C22F4B4 /* TTTTimeIntervalFormatter.h */,
+				3BFCFD597B3644453CE0478ADA24A3ED /* TTTTimeIntervalFormatter.m */,
+			);
+			name = TimeIntervalFormatter;
+			sourceTree = "<group>";
+		};
+		9F871F5748509B8CDFEAFF4E8D7C91E4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C58EC4A08D5FEC5435AFA88D0CB0EB95 /* Pods-FloatingSpeedWidget */,
+				7C40A9E30D1E0743D12112CAA5BE69CE /* Pods-FloatingSpeedWidgetTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A2723BB1B671A69B860C94912C77F19E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				BAED6C7F6923BF72C45C9BB0F7708979 /* AddressBook.framework */,
+				85AECD322BADB98916014E3B826C9C7C /* AddressBookUI.framework */,
+				E5CC822FECEAF75F2BAC5CD0EACB027F /* CoreLocation.framework */,
+				D32AD68B39563F659EC5D115546473CB /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		BDD8E91A70033AC2060A4CD35DB7A40E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F203A266C647CF468D1043D11A4EA271 /* FormatterKit.framework */,
+				19E426BF20B08F9D36D65020A84C2848 /* Pods_FloatingSpeedWidget.framework */,
+				2C8ADFA0A1CCDCA32E410E876BB93E57 /* Pods_FloatingSpeedWidgetTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3743EBAEA7E622C5C8DD0461E7BEACD /* NameFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				75CA6E6A506097C0CAEB1D4C538C285E /* TTTNameFormatter.h */,
+				42C3AA31CDA7CAFA45FA966C7E1678CD /* TTTNameFormatter.m */,
+			);
+			name = NameFormatter;
+			sourceTree = "<group>";
+		};
+		C5292E4E3E1FF4029C68CF8E0C060206 /* AddressFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				23633BEF2791474C676BB82F3229299E /* TTTAddressFormatter.h */,
+				26A9FCC354B3B4AD7639FF3658790547 /* TTTAddressFormatter.m */,
+			);
+			name = AddressFormatter;
+			sourceTree = "<group>";
+		};
+		C58EC4A08D5FEC5435AFA88D0CB0EB95 /* Pods-FloatingSpeedWidget */ = {
+			isa = PBXGroup;
+			children = (
+				EF563AA212A3B24A30C1FBAA0B27B18C /* Info.plist */,
+				4BF724114FE3A089E5E9165AF022EF85 /* Pods-FloatingSpeedWidget.modulemap */,
+				7BC8C740C4FD5F5945441100236FA787 /* Pods-FloatingSpeedWidget-acknowledgements.markdown */,
+				1C1591A53D8A4CF817D79E7FD330AF93 /* Pods-FloatingSpeedWidget-acknowledgements.plist */,
+				48B9289EEF61A19C07544EFA680653C7 /* Pods-FloatingSpeedWidget-dummy.m */,
+				D4DF0092AB203E51338E088DACDD579D /* Pods-FloatingSpeedWidget-frameworks.sh */,
+				91A92603413F6AD23E5CBF7E5BD37090 /* Pods-FloatingSpeedWidget-resources.sh */,
+				9A8D5FEA265D260BA17D9BDDD718BBE2 /* Pods-FloatingSpeedWidget-umbrella.h */,
+				5CD74771DF2CC8263FF84A3B899BDD9F /* Pods-FloatingSpeedWidget.debug.xcconfig */,
+				F293CF526810472111A862B72B775721 /* Pods-FloatingSpeedWidget.release.xcconfig */,
+			);
+			name = "Pods-FloatingSpeedWidget";
+			path = "Target Support Files/Pods-FloatingSpeedWidget";
+			sourceTree = "<group>";
+		};
+		E571163AD7F2743DA694058560F9D7B2 /* OrdinalNumberFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				8849A90A8615A42E49F05090F475B8D9 /* TTTOrdinalNumberFormatter.h */,
+				7ABED6C91666BDCFC4254C83DDB6129A /* TTTOrdinalNumberFormatter.m */,
+			);
+			name = OrdinalNumberFormatter;
+			sourceTree = "<group>";
+		};
+		E8BE86555D00092F6882B5C78BB582DA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				75EC4501780C0AF1AEED5036878BCF12 /* Resources */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		FA05287F8D70588403028BD4ECE87E93 /* LocationFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				14CD6DFCC3AA588DA571613BE569184B /* TTTLocationFormatter.h */,
+				8BC63EE77A585F089B773739B35EDED1 /* TTTLocationFormatter.m */,
+			);
+			name = LocationFormatter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5255A7AF8BBE8086D53BF3CC605DA512 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A740A41B49676DA83EF3D0E7CA5DE52 /* Pods-FloatingSpeedWidgetTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D2129154C3C9097DE9B48E11CFF1C42 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FA7B84E5C5E25F4EC3926D428E05FA3 /* FormatterKit-umbrella.h in Headers */,
+				54AB8664781A998869CEB1A338E216E5 /* TTTAddressFormatter.h in Headers */,
+				85FF67D90F1E79DEE815F3ED893C69F4 /* TTTArrayFormatter.h in Headers */,
+				FE0E199CD662053C229C0C2ADF42F74C /* TTTColorFormatter.h in Headers */,
+				0FC5ECA56183F2C12E0ACD354251870F /* TTTLocationFormatter.h in Headers */,
+				98686B31E5D1BAD719A0E2360B9AF50C /* TTTNameFormatter.h in Headers */,
+				74FDCDE74D3669BDF057932FA1864D59 /* TTTOrdinalNumberFormatter.h in Headers */,
+				3CF941444D462EB4002D88389E275C7B /* TTTTimeIntervalFormatter.h in Headers */,
+				04E497EC6569B55354D7449E7B3A1C48 /* TTTUnitOfInformationFormatter.h in Headers */,
+				FC406CCF11C2A4F87DC2C2D744ADD99B /* TTTURLRequestFormatter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		761856CC2E3AB28FDCBD554577A1BBDA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E73D72EABA7464345B4013D4F181375A /* Pods-FloatingSpeedWidget-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7B451780C1E1DDF466A5CE2A0C2098CD /* Pods-FloatingSpeedWidgetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEB92582C804197C922BE6351F8FBA97 /* Build configuration list for PBXNativeTarget "Pods-FloatingSpeedWidgetTests" */;
+			buildPhases = (
+				B68245A62290E1C0309044224936B9A8 /* Sources */,
+				8253EEEE83A2641BF3A2E2C5BD0E148F /* Frameworks */,
+				5255A7AF8BBE8086D53BF3CC605DA512 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-FloatingSpeedWidgetTests";
+			productName = "Pods-FloatingSpeedWidgetTests";
+			productReference = 2C8ADFA0A1CCDCA32E410E876BB93E57 /* Pods_FloatingSpeedWidgetTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B50C56E7913307EC73740BB45D44C0EE /* FormatterKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 687E631906D579100390C00602366D0C /* Build configuration list for PBXNativeTarget "FormatterKit" */;
+			buildPhases = (
+				670F80A5E22F77758E4B4602683DCB41 /* Sources */,
+				2D5C2B87C699E0C26D2F84C403567612 /* Frameworks */,
+				5D2129154C3C9097DE9B48E11CFF1C42 /* Headers */,
+				1DE2CCF05EB446D40E8781B482F0FF29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FormatterKit;
+			productName = FormatterKit;
+			productReference = F203A266C647CF468D1043D11A4EA271 /* FormatterKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E7B55453F182E7A94D7834BAB350C17F /* Pods-FloatingSpeedWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02581FC781CF660A62CA3B184E1DAE73 /* Build configuration list for PBXNativeTarget "Pods-FloatingSpeedWidget" */;
+			buildPhases = (
+				4DF27268B5E20AC450DA0F55798CAA6B /* Sources */,
+				6B0701D0B0ADA8F58A038C2B45A2B34D /* Frameworks */,
+				761856CC2E3AB28FDCBD554577A1BBDA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB9AB9DF1B8090E487BBC5016E62D77C /* PBXTargetDependency */,
+			);
+			name = "Pods-FloatingSpeedWidget";
+			productName = "Pods-FloatingSpeedWidget";
+			productReference = 19E426BF20B08F9D36D65020A84C2848 /* Pods_FloatingSpeedWidget.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = BDD8E91A70033AC2060A4CD35DB7A40E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B50C56E7913307EC73740BB45D44C0EE /* FormatterKit */,
+				E7B55453F182E7A94D7834BAB350C17F /* Pods-FloatingSpeedWidget */,
+				7B451780C1E1DDF466A5CE2A0C2098CD /* Pods-FloatingSpeedWidgetTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1DE2CCF05EB446D40E8781B482F0FF29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41434468B738A96D10980E3C92FFF9AA /* ar.lproj in Resources */,
+				BDC52302A83E1C7098AFFEDD7182034C /* ca.lproj in Resources */,
+				3D5263DC78327E2CA49EFF71CC026593 /* cs.lproj in Resources */,
+				8335587206D8687445B2D14937AEA72B /* da.lproj in Resources */,
+				AB199D13C5505EDF4FB69A8D55BC28F4 /* de.lproj in Resources */,
+				ED54921CE6EE074BBB39B6CC42219655 /* el.lproj in Resources */,
+				AB100F68F45BE00A489A1444D4F43A51 /* en.lproj in Resources */,
+				072133874B54DD5B9B88A4A7DFA2D69C /* es.lproj in Resources */,
+				A7FE2089F44310CA35209805D5468FD8 /* fr.lproj in Resources */,
+				6CBF2FE272693B7CD806479484DDBE22 /* he.lproj in Resources */,
+				BBD9E6FEAE9D43A3123CCE69624D1E26 /* hu.lproj in Resources */,
+				407216F70BF85F7254646DB7305C90D5 /* id.lproj in Resources */,
+				A2521F2F662F6B34EA5076B7111B5B4F /* it.lproj in Resources */,
+				5B8EEB025FA3DDD13AF23102DC58FD61 /* ja.lproj in Resources */,
+				69ADF81E89AFD502088F534C2C6A3795 /* ko.lproj in Resources */,
+				0BF8C7332644132C98865682C8FBAF8B /* ms.lproj in Resources */,
+				B9FF9A5D5CFD78E39AEDE141A1BF7AD4 /* nb.lproj in Resources */,
+				F83D2B4919D49EE6C32A3F5014F0D178 /* nl.lproj in Resources */,
+				67548940F6E915D792E4DBEB6F96461A /* nn.lproj in Resources */,
+				F7DF9F30EF485AC7C3615C5FCA165429 /* pl.lproj in Resources */,
+				A755A13EF8406C1D7AB9F8D91EAAC6A5 /* pt.lproj in Resources */,
+				F1092A9D2F857F13C1C6E57D6F15ADE4 /* pt_BR.lproj in Resources */,
+				DE819EA4605A1476B55DDCC5BC679C2A /* ro.lproj in Resources */,
+				7E23A06F94CE455F9831D436AD56D40B /* ru.lproj in Resources */,
+				7ACC62C018CC60338455C13D97F995BF /* sv.lproj in Resources */,
+				206F3F78C2BC5944C219136EB44FC7E1 /* th.lproj in Resources */,
+				B4A8CEA73D7D43EAAA434ADEBE101157 /* tr.lproj in Resources */,
+				AA4ACC086C9844F323C31980F95AC230 /* uk.lproj in Resources */,
+				24099F4ADBAD16EC7E1E52ECD2DEB3D9 /* vi.lproj in Resources */,
+				F59C568F8480F486159937DC5BC88EBC /* zh-Hans.lproj in Resources */,
+				CD2C07DABA1559DA561B17B02FB9EB10 /* zh-Hant.lproj in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DF27268B5E20AC450DA0F55798CAA6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67F3036FC9C8E0943D13FBAA57152935 /* Pods-FloatingSpeedWidget-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		670F80A5E22F77758E4B4602683DCB41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				968379337F4C4B64D70CA5F4B143C7F7 /* FormatterKit-dummy.m in Sources */,
+				0019D02BD813C4A6A96E1ACDCC108753 /* TTTAddressFormatter.m in Sources */,
+				CE3EF64513C7E5C68F09CD524F29C9FC /* TTTArrayFormatter.m in Sources */,
+				5EC395F9993B0FACA3F376BFD511D12F /* TTTColorFormatter.m in Sources */,
+				F3966DC2AEFF27FC62C3E013BF890FD5 /* TTTLocationFormatter.m in Sources */,
+				9094766ECD24DB8063CA6C4432099174 /* TTTNameFormatter.m in Sources */,
+				9CCB91E82D77548347C4FB3913E6C6A3 /* TTTOrdinalNumberFormatter.m in Sources */,
+				6E21BF6E6775169963A789D2DC891907 /* TTTTimeIntervalFormatter.m in Sources */,
+				9F766A976F9C7B950DB5188D802BFD24 /* TTTUnitOfInformationFormatter.m in Sources */,
+				126EAB965260374C0E1B72B35FED4A1B /* TTTURLRequestFormatter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B68245A62290E1C0309044224936B9A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78C13FC6048C1FD7CB539441B3898B40 /* Pods-FloatingSpeedWidgetTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB9AB9DF1B8090E487BBC5016E62D77C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FormatterKit;
+			target = B50C56E7913307EC73740BB45D44C0EE /* FormatterKit */;
+			targetProxy = 399E5FAB01D7FCC7C7F7CF4B7831519D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		015A368F878AC3E2CEAE21DDE8026304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		44CDBB6D11DE06DB64D6268622BDC47E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5EE301460CDDF4308D6FA0595A0D85BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D460B7AF29D4927B3CA51D9D488D6944 /* FormatterKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FormatterKit/FormatterKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FormatterKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FormatterKit/FormatterKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FormatterKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		604F134F3F39C17F1DF2E62E77BC9341 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D460B7AF29D4927B3CA51D9D488D6944 /* FormatterKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FormatterKit/FormatterKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FormatterKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FormatterKit/FormatterKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FormatterKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6908B9B3AF290D1F3496FC7B7148DA61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CD74771DF2CC8263FF84A3B899BDD9F /* Pods-FloatingSpeedWidget.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FloatingSpeedWidget/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FloatingSpeedWidget/Pods-FloatingSpeedWidget.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FloatingSpeedWidget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A3474C9390CCB2725D24F3FFB31290A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86EE10719F3784734E665AFEF2EEAC50 /* Pods-FloatingSpeedWidgetTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FloatingSpeedWidgetTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FloatingSpeedWidgetTests/Pods-FloatingSpeedWidgetTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FloatingSpeedWidgetTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D7FC73CAB2C377D3918D87C733BCCAC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBBC3AA210A7E1529D252BE848841768 /* Pods-FloatingSpeedWidgetTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FloatingSpeedWidgetTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FloatingSpeedWidgetTests/Pods-FloatingSpeedWidgetTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FloatingSpeedWidgetTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EB9E665A4098173DCB8EAF165F19DFCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F293CF526810472111A862B72B775721 /* Pods-FloatingSpeedWidget.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FloatingSpeedWidget/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FloatingSpeedWidget/Pods-FloatingSpeedWidget.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FloatingSpeedWidget;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02581FC781CF660A62CA3B184E1DAE73 /* Build configuration list for PBXNativeTarget "Pods-FloatingSpeedWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6908B9B3AF290D1F3496FC7B7148DA61 /* Debug */,
+				EB9E665A4098173DCB8EAF165F19DFCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				015A368F878AC3E2CEAE21DDE8026304 /* Debug */,
+				44CDBB6D11DE06DB64D6268622BDC47E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		687E631906D579100390C00602366D0C /* Build configuration list for PBXNativeTarget "FormatterKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EE301460CDDF4308D6FA0595A0D85BE /* Debug */,
+				604F134F3F39C17F1DF2E62E77BC9341 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEB92582C804197C922BE6351F8FBA97 /* Build configuration list for PBXNativeTarget "Pods-FloatingSpeedWidgetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3474C9390CCB2725D24F3FFB31290A7 /* Debug */,
+				D7FC73CAB2C377D3918D87C733BCCAC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
