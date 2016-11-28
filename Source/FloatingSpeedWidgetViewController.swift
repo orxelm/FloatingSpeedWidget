@@ -12,7 +12,7 @@ protocol FloatingSpeedWidgetDelegate {
     func floatingSpeedWidgetShouldChangeSpeed(speed: Double)
 }
 
-class FloatingSpeedWidgetViewController: UIViewController {
+open class FloatingSpeedWidgetViewController: UIViewController {
 
     private var floatingWidget: FloatingSpeedWidget!
     private var snapBehavior: UISnapBehavior!
@@ -22,7 +22,7 @@ class FloatingSpeedWidgetViewController: UIViewController {
     
     // MARK: - UIViewController
     
-    override func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         
         self.floatingWidget = FloatingSpeedWidget(size: CGSize(width: 80, height: 80), anchorPoint: .bottomLeft)
@@ -42,7 +42,7 @@ class FloatingSpeedWidgetViewController: UIViewController {
     
     // MARK: - Public
     
-    func updateSpeed(speed: Double) {
+    open func updateSpeed(speed: Double) {
         self.floatingWidget?.speed = speed
     }
     
