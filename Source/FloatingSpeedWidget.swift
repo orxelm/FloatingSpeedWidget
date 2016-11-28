@@ -9,7 +9,7 @@
 import UIKit
 import FormatterKit
 
-enum FloatingSpeedWidgetAnchor {
+public enum FloatingSpeedWidgetAnchor {
     case bottomLeft, topLeft, bottomRight, topRight
 }
 

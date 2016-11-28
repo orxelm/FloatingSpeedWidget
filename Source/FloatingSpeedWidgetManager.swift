@@ -8,10 +8,10 @@
 
 import UIKit
 
-open class FloatingSpeedWidgetManager: NSObject {
+public class FloatingSpeedWidgetManager: NSObject {
 
-    open var speedNumberFont: UIFont?
-    open var speedUnitFont: UIFont?
+    public var speedNumberFont: UIFont?
+    public var speedUnitFont: UIFont?
     
     private var floatingWidget: FloatingSpeedWidget!
     private var snapBehavior: UISnapBehavior!
@@ -20,12 +20,12 @@ open class FloatingSpeedWidgetManager: NSObject {
     private var animator: UIDynamicAnimator!
     private var targetViewController: UIViewController
     
-    public init(withTargetViewController targetViewController: UIViewController, andWidgetSize widgetSize: CGFloat) {
+    public init(withTargetViewController targetViewController: UIViewController, anchorPoint: FloatingSpeedWidgetAnchor = .bottomLeft, andWidgetSize widgetSize: CGFloat) {
         assert(targetViewController.view != nil, "FloatingSpeedWidgetManager must be initialized after targetViewController.view is loaded")
 
         self.targetViewController = targetViewController
         
-        self.floatingWidget = FloatingSpeedWidget(size: CGSize(width: widgetSize, height: widgetSize), anchorPoint: .bottomLeft)
+        self.floatingWidget = FloatingSpeedWidget(size: CGSize(width: widgetSize, height: widgetSize), anchorPoint: anchorPoint)
         self.floatingWidget.speedNumberFont = self.speedNumberFont
         self.floatingWidget.speedUnitFont = self.speedUnitFont
         
@@ -44,7 +44,7 @@ open class FloatingSpeedWidgetManager: NSObject {
     
     // MARK: - Public
     
-    open func updateSpeed(speed: Double) {
+    public func updateSpeed(speed: Double) {
         self.floatingWidget?.speed = speed
     }
 
