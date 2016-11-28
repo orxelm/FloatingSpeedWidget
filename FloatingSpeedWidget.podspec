@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name              = "FloatingSpeedWidget"
-  s.version           = "0.5"
+  s.version           = "0.6"
   s.summary           = "Driving speed widget"
   s.homepage          = "https://github.com/orxelm/FloatingSpeedWidget"
   s.license           = { :type => "MIT", :file => "LICENSE" }

@@ -10,6 +10,7 @@ import UIKit
 
 public class FloatingSpeedWidgetManager: NSObject {
     
+    /// The circular widget view
     public private(set) var floatingWidgetView: FloatingSpeedWidgetView!
     private var snapBehavior: UISnapBehavior!
     private var attachmentBehavior: UIAttachmentBehavior!

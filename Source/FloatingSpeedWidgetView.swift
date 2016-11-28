@@ -17,12 +17,14 @@ private let MARGIN_FROM_BOUNDS: CGFloat = 50
 
 public class FloatingSpeedWidgetView: UIView {
     
+    /// The font for the (bigger) number label
     public var speedNumberFont: UIFont? {
         didSet {
             self.speedLable?.font = speedNumberFont
         }
     }
     
+    /// The font for the unit label
     public var speedUnitFont: UIFont? {
         didSet {
             self.unitLable?.font = speedUnitFont

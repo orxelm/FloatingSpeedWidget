@@ -31,7 +31,6 @@ $ pod install
 
 ## Usage
 
-## Properties
 
 ##Author
 FloatingSpeedWidget is owned and maintained by Or Elmaliah. You can follow me on Twitter [@OrElm](https://twitter.com/orelm).
