@@ -14,6 +14,9 @@ protocol FloatingSpeedWidgetDelegate {
 
 open class FloatingSpeedWidgetViewController: UIViewController {
 
+    open var speedNumberFont: UIFont?
+    open var speedUnitFont: UIFont?
+    
     private var floatingWidget: FloatingSpeedWidget!
     private var snapBehavior: UISnapBehavior!
     private var attachmentBehavior: UIAttachmentBehavior!
@@ -26,6 +29,8 @@ open class FloatingSpeedWidgetViewController: UIViewController {
         super.viewDidLoad()
         
         self.floatingWidget = FloatingSpeedWidget(size: CGSize(width: 80, height: 80), anchorPoint: .bottomLeft)
+        self.floatingWidget.speedNumberFont = self.speedNumberFont
+        self.floatingWidget.speedUnitFont = self.speedUnitFont
         self.view.addSubview(self.floatingWidget)
 
         self.animator = UIDynamicAnimator(referenceView: self.view)

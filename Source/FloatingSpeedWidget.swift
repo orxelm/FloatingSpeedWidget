@@ -23,6 +23,8 @@ class FloatingSpeedWidget: UIView {
         return CGPoint(x: self.bounds.width/2, y: self.bounds.height/2)
     }
     
+    var speedNumberFont: UIFont?
+    var speedUnitFont: UIFont?
     var speed: Double = 0 {
         didSet {
             self.setFormattedSpeed()
@@ -64,7 +66,7 @@ class FloatingSpeedWidget: UIView {
     private func createSpeedLables() {
         // Number label
         let speedLable = UILabel()
-        speedLable.font = UIFont.systemFont(ofSize: 24)
+        speedLable.font = self.speedUnitFont ?? UIFont.systemFont(ofSize: 24)
         speedLable.center = self.centerPoint
         speedLable.textColor = UIColor.white
         speedLable.translatesAutoresizingMaskIntoConstraints = false
@@ -77,7 +79,7 @@ class FloatingSpeedWidget: UIView {
         
         // Unit label
         let unitLable = UILabel()
-        unitLable.font = UIFont.systemFont(ofSize: 13)
+        unitLable.font = self.speedUnitFont ?? UIFont.systemFont(ofSize: 13)
         unitLable.center = self.centerPoint
         unitLable.textColor = UIColor.white
         unitLable.translatesAutoresizingMaskIntoConstraints = false
