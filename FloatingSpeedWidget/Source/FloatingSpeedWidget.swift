@@ -25,28 +25,15 @@ class FloatingSpeedWidget: UIView {
     
     var speed: Double = 0 {
         didSet {
-            guard self.speedLable != nil else { return }
             self.setFormattedSpeed()
         }
     }
+    
     // MARK: - Init
     
     init(size: CGSize, anchorPoint: FloatingSpeedWidgetAnchor) {
-        let bounds = UIScreen.main.bounds
-        var anchor = CGPoint(x: 0, y: 0)
-        
         let size = min(size.width, size.height)
-        
-        switch anchorPoint {
-        case .bottomLeft:
-            anchor = CGPoint(x: MARGIN_FROM_BOUNDS, y: bounds.height-size-MARGIN_FROM_BOUNDS)
-        case .topLeft:
-            anchor = CGPoint(x: MARGIN_FROM_BOUNDS, y: MARGIN_FROM_BOUNDS)
-        case .bottomRight:
-            anchor = CGPoint(x: bounds.width-size-MARGIN_FROM_BOUNDS, y: bounds.height-size-MARGIN_FROM_BOUNDS)
-        case .topRight:
-            anchor = CGPoint(x: bounds.width-size-MARGIN_FROM_BOUNDS, y: MARGIN_FROM_BOUNDS)
-        }
+        let anchor = FloatingSpeedWidget.anchorPoint(fromFloatingSpeedWidgetAnchor: anchorPoint, andSize: size)
         
         super.init(frame: CGRect(x: anchor.x, y: anchor.y, width: size, height: size))
 
@@ -64,6 +51,17 @@ class FloatingSpeedWidget: UIView {
         self.layer.shadowOpacity = 1
         self.layer.shadowOffset = CGSize(width: 0, height: 1)
         
+        self.createSpeedLables()
+        self.setFormattedSpeed()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    // MARK: - Private helpers
+    
+    private func createSpeedLables() {
         // Number label
         let speedLable = UILabel()
         speedLable.font = UIFont.systemFont(ofSize: 24)
@@ -89,17 +87,11 @@ class FloatingSpeedWidget: UIView {
         let unitLableCenterxConstraint = NSLayoutConstraint(item: unitLable, attribute: .centerX, relatedBy: .equal, toItem: speedLable, attribute: .centerX, multiplier: 1, constant: 0)
         let unitLableTopConstraint = NSLayoutConstraint(item: unitLable, attribute: .top, relatedBy: .equal, toItem: speedLable, attribute: .bottom, multiplier: 1, constant: -4)
         self.addConstraints([unitLableCenterxConstraint, unitLableTopConstraint])
-        
-        self.setFormattedSpeed()
     }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
-    // MARK: - Private
     
     private func setFormattedSpeed() {
+        guard self.speedLable != nil && self.unitLable != nil else { return }
+        
         let locationFormatter = TTTLocationFormatter()
         locationFormatter.numberFormatter.maximumFractionDigits = 0
         
@@ -108,6 +100,24 @@ class FloatingSpeedWidget: UIView {
             self.speedLable.text = speedComponents.first
             self.unitLable.text = speedComponents.last
         }
+    }
+    
+    private static func anchorPoint(fromFloatingSpeedWidgetAnchor floatingSpeedWidgetAnchor: FloatingSpeedWidgetAnchor, andSize size: CGFloat) -> CGPoint {
+        let bounds = UIScreen.main.bounds
+        var anchor = CGPoint(x: 0, y: 0)
+        
+        switch floatingSpeedWidgetAnchor {
+        case .bottomLeft:
+            anchor = CGPoint(x: MARGIN_FROM_BOUNDS, y: bounds.height-size-MARGIN_FROM_BOUNDS)
+        case .topLeft:
+            anchor = CGPoint(x: MARGIN_FROM_BOUNDS, y: MARGIN_FROM_BOUNDS)
+        case .bottomRight:
+            anchor = CGPoint(x: bounds.width-size-MARGIN_FROM_BOUNDS, y: bounds.height-size-MARGIN_FROM_BOUNDS)
+        case .topRight:
+            anchor = CGPoint(x: bounds.width-size-MARGIN_FROM_BOUNDS, y: MARGIN_FROM_BOUNDS)
+        }
+        
+        return anchor
     }
 }
 
