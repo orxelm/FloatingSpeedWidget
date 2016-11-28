@@ -31,7 +31,8 @@ public class FloatingSpeedWidgetManager: NSObject {
         self.targetViewController = targetViewController
         
         self.floatingWidgetView = FloatingSpeedWidgetView(size: CGSize(width: widgetSize, height: widgetSize), anchorPoint: anchorPoint)
-        
+        self.floatingWidgetView.alpha = 0
+        self.floatingWidgetView.transform = CGAffineTransform(scaleX: 0, y: 0)
         targetViewController.view.addSubview(self.floatingWidgetView)
         
         self.animator = UIDynamicAnimator(referenceView: targetViewController.view)
@@ -43,6 +44,11 @@ public class FloatingSpeedWidgetManager: NSObject {
         
         let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(handlePan(recognizer:)))
         self.floatingWidgetView.addGestureRecognizer(panGestureRecognizer)
+        
+        UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.5, options: UIViewAnimationOptions.curveEaseIn, animations: { () -> Void in
+            self.floatingWidgetView.alpha = 1
+            self.floatingWidgetView.transform = CGAffineTransform(scaleX: 1, y: 1)
+        }, completion: nil)
     }
     
     // MARK: - Public
