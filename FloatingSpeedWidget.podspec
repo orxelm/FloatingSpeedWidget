@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.platform          = :ios, "8.0"
   s.source            = { :git => "https://github.com/orxelm/FloatingSpeedWidget.git", :tag => s.version }
   s.source_files      = "Sources/*.swift"
-  s.dependency 		  = "FormatterKit"
+  s.dependency 		    "FormatterKit"
   s.requires_arc      = true
   s.framework         = "UIKit"
 end
