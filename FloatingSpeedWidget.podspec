@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.social_media_url  = "https://twitter.com/OrElm"
   s.platform          = :ios, "8.0"
   s.source            = { :git => "https://github.com/orxelm/FloatingSpeedWidget.git", :tag => s.version }
-  s.source_files      = "Sources/*.swift"
+  s.source_files      = "Source/*.swift"
   s.dependency 		    "FormatterKit"
   s.requires_arc      = true
   s.framework         = "UIKit"
