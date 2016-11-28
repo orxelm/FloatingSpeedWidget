@@ -1,18 +1,14 @@
 //
-//  FloatingSpeedWidgetViewController.swift
+//  FloatingSpeedWidgetManager.swift
 //  FloatingSpeedWidget
 //
-//  Created by Or Elmaliah on 27/11/2016.
+//  Created by Or Elmaliah on 28/11/2016.
 //  Copyright © 2016 Or Elmaliah. All rights reserved.
 //
 
 import UIKit
 
-protocol FloatingSpeedWidgetDelegate {
-    func floatingSpeedWidgetShouldChangeSpeed(speed: Double)
-}
-
-open class FloatingSpeedWidgetViewController: UIViewController {
+open class FloatingSpeedWidgetManager: NSObject {
 
     open var speedNumberFont: UIFont?
     open var speedUnitFont: UIFont?
@@ -22,27 +18,28 @@ open class FloatingSpeedWidgetViewController: UIViewController {
     private var attachmentBehavior: UIAttachmentBehavior!
     private var collisionBehavior: UICollisionBehavior!
     private var animator: UIDynamicAnimator!
+    private var targetViewController: UIViewController
     
-    // MARK: - UIViewController
-    
-    override open func viewDidLoad() {
-        super.viewDidLoad()
+    public init(withTargetViewController targetViewController: UIViewController, andWidgetSize widgetSize: CGFloat) {
+        assert(targetViewController.view != nil, "FloatingSpeedWidgetManager must be initialized after targetViewController.view is loaded")
+
+        self.targetViewController = targetViewController
         
-        self.floatingWidget = FloatingSpeedWidget(size: CGSize(width: 80, height: 80), anchorPoint: .bottomLeft)
+        self.floatingWidget = FloatingSpeedWidget(size: CGSize(width: widgetSize, height: widgetSize), anchorPoint: .bottomLeft)
         self.floatingWidget.speedNumberFont = self.speedNumberFont
         self.floatingWidget.speedUnitFont = self.speedUnitFont
-        self.view.addSubview(self.floatingWidget)
-
-        self.animator = UIDynamicAnimator(referenceView: self.view)
         
+        targetViewController.view.addSubview(self.floatingWidget)
+        
+        self.animator = UIDynamicAnimator(referenceView: targetViewController.view)
         self.collisionBehavior = UICollisionBehavior(items: [self.floatingWidget])
         self.collisionBehavior.translatesReferenceBoundsIntoBoundary = true
         self.animator.addBehavior(self.collisionBehavior)
         
+        super.init()
+        
         let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(handlePan(recognizer:)))
         self.floatingWidget.addGestureRecognizer(panGestureRecognizer)
-        
-        self.view.backgroundColor = UIColor.clear
     }
     
     // MARK: - Public
@@ -50,11 +47,12 @@ open class FloatingSpeedWidgetViewController: UIViewController {
     open func updateSpeed(speed: Double) {
         self.floatingWidget?.speed = speed
     }
+
     
     // MARK: - Actions
     
     @objc private func handlePan(recognizer: UIPanGestureRecognizer) {
-        let location = recognizer.location(in: self.view)
+        let location = recognizer.location(in: self.targetViewController.view)
         
         if recognizer.state == .began {
             self.animator.removeAllBehaviors()
@@ -78,4 +76,3 @@ open class FloatingSpeedWidgetViewController: UIViewController {
         }
     }
 }
-

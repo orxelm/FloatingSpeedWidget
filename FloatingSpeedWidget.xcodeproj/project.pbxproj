@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7928794B1DEC45B60051409B /* FloatingSpeedWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792879491DEC45B60051409B /* FloatingSpeedWidget.swift */; };
-		7928794C1DEC45B60051409B /* FloatingSpeedWidgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7928794A1DEC45B60051409B /* FloatingSpeedWidgetViewController.swift */; };
+		792879501DEC594E0051409B /* FloatingSpeedWidgetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7928794F1DEC594E0051409B /* FloatingSpeedWidgetManager.swift */; };
+		792879521DEC5C310051409B /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792879511DEC5C310051409B /* DemoViewController.swift */; };
 		79C7F8211DEADFF00057889A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C7F8201DEADFF00057889A /* AppDelegate.swift */; };
 		79C7F8261DEADFF00057889A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79C7F8241DEADFF00057889A /* Main.storyboard */; };
 		79C7F8281DEADFF00057889A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79C7F8271DEADFF00057889A /* Assets.xcassets */; };
@@ -31,7 +32,8 @@
 /* Begin PBXFileReference section */
 		7339B35D5A7F843F8AEC96EE /* Pods-FloatingSpeedWidgetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FloatingSpeedWidgetTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FloatingSpeedWidgetTests/Pods-FloatingSpeedWidgetTests.release.xcconfig"; sourceTree = "<group>"; };
 		792879491DEC45B60051409B /* FloatingSpeedWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FloatingSpeedWidget.swift; path = Source/FloatingSpeedWidget.swift; sourceTree = SOURCE_ROOT; };
-		7928794A1DEC45B60051409B /* FloatingSpeedWidgetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FloatingSpeedWidgetViewController.swift; path = Source/FloatingSpeedWidgetViewController.swift; sourceTree = SOURCE_ROOT; };
+		7928794F1DEC594E0051409B /* FloatingSpeedWidgetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FloatingSpeedWidgetManager.swift; path = Source/FloatingSpeedWidgetManager.swift; sourceTree = SOURCE_ROOT; };
+		792879511DEC5C310051409B /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 		79C7F81D1DEADFF00057889A /* FloatingSpeedWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FloatingSpeedWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79C7F8201DEADFF00057889A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79C7F8251DEADFF00057889A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 		79C7F81F1DEADFF00057889A /* FloatingSpeedWidget */ = {
 			isa = PBXGroup;
 			children = (
+				792879511DEC5C310051409B /* DemoViewController.swift */,
 				79C7F8411DEAE01D0057889A /* Source */,
 				79C7F8401DEADFF80057889A /* Resources */,
 			);
@@ -133,7 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				792879491DEC45B60051409B /* FloatingSpeedWidget.swift */,
-				7928794A1DEC45B60051409B /* FloatingSpeedWidgetViewController.swift */,
+				7928794F1DEC594E0051409B /* FloatingSpeedWidgetManager.swift */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -350,9 +353,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7928794C1DEC45B60051409B /* FloatingSpeedWidgetViewController.swift in Sources */,
 				7928794B1DEC45B60051409B /* FloatingSpeedWidget.swift in Sources */,
+				792879501DEC594E0051409B /* FloatingSpeedWidgetManager.swift in Sources */,
 				79C7F8211DEADFF00057889A /* AppDelegate.swift in Sources */,
+				792879521DEC5C310051409B /* DemoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
