@@ -9,11 +9,8 @@
 import UIKit
 
 public class FloatingSpeedWidgetManager: NSObject {
-
-    public var speedNumberFont: UIFont?
-    public var speedUnitFont: UIFont?
     
-    private var floatingWidget: FloatingSpeedWidget!
+    public private(set) var floatingWidgetView: FloatingSpeedWidgetView!
     private var snapBehavior: UISnapBehavior!
     private var attachmentBehavior: UIAttachmentBehavior!
     private var collisionBehavior: UICollisionBehavior!
@@ -24,7 +21,7 @@ public class FloatingSpeedWidgetManager: NSObject {
     
     deinit {
         self.targetViewController = nil
-        self.floatingWidget = nil
+        self.floatingWidgetView = nil
     }
     
     public init(withTargetViewController targetViewController: UIViewController, anchorPoint: FloatingSpeedWidgetAnchor = .bottomLeft, andWidgetSize widgetSize: CGFloat) {
@@ -32,33 +29,31 @@ public class FloatingSpeedWidgetManager: NSObject {
 
         self.targetViewController = targetViewController
         
-        self.floatingWidget = FloatingSpeedWidget(size: CGSize(width: widgetSize, height: widgetSize), anchorPoint: anchorPoint)
-        self.floatingWidget.speedNumberFont = self.speedNumberFont
-        self.floatingWidget.speedUnitFont = self.speedUnitFont
+        self.floatingWidgetView = FloatingSpeedWidgetView(size: CGSize(width: widgetSize, height: widgetSize), anchorPoint: anchorPoint)
         
-        targetViewController.view.addSubview(self.floatingWidget)
+        targetViewController.view.addSubview(self.floatingWidgetView)
         
         self.animator = UIDynamicAnimator(referenceView: targetViewController.view)
-        self.collisionBehavior = UICollisionBehavior(items: [self.floatingWidget])
+        self.collisionBehavior = UICollisionBehavior(items: [self.floatingWidgetView])
         self.collisionBehavior.translatesReferenceBoundsIntoBoundary = true
         self.animator.addBehavior(self.collisionBehavior)
         
         super.init()
         
         let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(handlePan(recognizer:)))
-        self.floatingWidget.addGestureRecognizer(panGestureRecognizer)
+        self.floatingWidgetView.addGestureRecognizer(panGestureRecognizer)
     }
     
     // MARK: - Public
     
     public func updateSpeed(speed: Double) {
-        self.floatingWidget?.speed = speed
+        self.floatingWidgetView?.speed = speed
     }
 
     public func removeWidget() {
         self.animator.removeAllBehaviors()
-        self.floatingWidget.removeFromSuperview()
-        self.floatingWidget = nil
+        self.floatingWidgetView.removeFromSuperview()
+        self.floatingWidgetView = nil
         self.targetViewController = nil
     }
     
@@ -73,7 +68,7 @@ public class FloatingSpeedWidgetManager: NSObject {
             self.animator.removeAllBehaviors()
             self.animator.addBehavior(self.collisionBehavior)
             
-            self.attachmentBehavior = UIAttachmentBehavior(item: self.floatingWidget, attachedToAnchor: location)
+            self.attachmentBehavior = UIAttachmentBehavior(item: self.floatingWidgetView, attachedToAnchor: location)
             self.animator.addBehavior(self.attachmentBehavior)
         }
         
@@ -85,7 +80,7 @@ public class FloatingSpeedWidgetManager: NSObject {
             self.animator.removeAllBehaviors()
             self.animator.addBehavior(self.collisionBehavior)
             
-            self.snapBehavior = UISnapBehavior(item: self.floatingWidget, snapTo: location)
+            self.snapBehavior = UISnapBehavior(item: self.floatingWidgetView, snapTo: location)
             self.snapBehavior.damping = 0.4
             self.animator.addBehavior(self.snapBehavior)
         }

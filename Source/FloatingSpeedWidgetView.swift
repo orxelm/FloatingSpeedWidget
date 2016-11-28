@@ -1,5 +1,5 @@
 //
-//  FloatingSpeedWidget.swift
+//  FloatingSpeedWidgetView.swift
 //  FloatingSpeedWidget
 //
 //  Created by Or Elmaliah on 27/11/2016.
@@ -15,7 +15,25 @@ public enum FloatingSpeedWidgetAnchor {
 
 private let MARGIN_FROM_BOUNDS: CGFloat = 50
 
-class FloatingSpeedWidget: UIView {
+public class FloatingSpeedWidgetView: UIView {
+    
+    public var speedNumberFont: UIFont? {
+        didSet {
+            self.speedLable?.font = speedNumberFont
+        }
+    }
+    
+    public var speedUnitFont: UIFont? {
+        didSet {
+            self.unitLable?.font = speedUnitFont
+        }
+    }
+    
+    var speed: Double = 0 {
+        didSet {
+            self.setFormattedSpeed()
+        }
+    }
     
     private var speedLable: UILabel!
     private var unitLable: UILabel!
@@ -23,19 +41,11 @@ class FloatingSpeedWidget: UIView {
         return CGPoint(x: self.bounds.width/2, y: self.bounds.height/2)
     }
     
-    var speedNumberFont: UIFont?
-    var speedUnitFont: UIFont?
-    var speed: Double = 0 {
-        didSet {
-            self.setFormattedSpeed()
-        }
-    }
-    
     // MARK: - Init
     
     init(size: CGSize, anchorPoint: FloatingSpeedWidgetAnchor) {
         let size = min(size.width, size.height)
-        let anchor = FloatingSpeedWidget.anchorPoint(fromFloatingSpeedWidgetAnchor: anchorPoint, andSize: size)
+        let anchor = FloatingSpeedWidgetView.anchorPoint(fromFloatingSpeedWidgetAnchor: anchorPoint, andSize: size)
         
         super.init(frame: CGRect(x: anchor.x, y: anchor.y, width: size, height: size))
 
@@ -57,7 +67,7 @@ class FloatingSpeedWidget: UIView {
         self.setFormattedSpeed()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     

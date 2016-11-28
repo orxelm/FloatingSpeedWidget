@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7928794B1DEC45B60051409B /* FloatingSpeedWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792879491DEC45B60051409B /* FloatingSpeedWidget.swift */; };
+		7928794B1DEC45B60051409B /* FloatingSpeedWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792879491DEC45B60051409B /* FloatingSpeedWidgetView.swift */; };
 		792879501DEC594E0051409B /* FloatingSpeedWidgetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7928794F1DEC594E0051409B /* FloatingSpeedWidgetManager.swift */; };
 		792879521DEC5C310051409B /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792879511DEC5C310051409B /* DemoViewController.swift */; };
 		79C7F8211DEADFF00057889A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C7F8201DEADFF00057889A /* AppDelegate.swift */; };
@@ -31,7 +31,7 @@
 
 /* Begin PBXFileReference section */
 		7339B35D5A7F843F8AEC96EE /* Pods-FloatingSpeedWidgetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FloatingSpeedWidgetTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FloatingSpeedWidgetTests/Pods-FloatingSpeedWidgetTests.release.xcconfig"; sourceTree = "<group>"; };
-		792879491DEC45B60051409B /* FloatingSpeedWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FloatingSpeedWidget.swift; path = Source/FloatingSpeedWidget.swift; sourceTree = SOURCE_ROOT; };
+		792879491DEC45B60051409B /* FloatingSpeedWidgetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FloatingSpeedWidgetView.swift; path = Source/FloatingSpeedWidgetView.swift; sourceTree = SOURCE_ROOT; };
 		7928794F1DEC594E0051409B /* FloatingSpeedWidgetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FloatingSpeedWidgetManager.swift; path = Source/FloatingSpeedWidgetManager.swift; sourceTree = SOURCE_ROOT; };
 		792879511DEC5C310051409B /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 		79C7F81D1DEADFF00057889A /* FloatingSpeedWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FloatingSpeedWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,7 +135,7 @@
 		79C7F8411DEAE01D0057889A /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				792879491DEC45B60051409B /* FloatingSpeedWidget.swift */,
+				792879491DEC45B60051409B /* FloatingSpeedWidgetView.swift */,
 				7928794F1DEC594E0051409B /* FloatingSpeedWidgetManager.swift */,
 			);
 			name = Source;
@@ -353,7 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7928794B1DEC45B60051409B /* FloatingSpeedWidget.swift in Sources */,
+				7928794B1DEC45B60051409B /* FloatingSpeedWidgetView.swift in Sources */,
 				792879501DEC594E0051409B /* FloatingSpeedWidgetManager.swift in Sources */,
 				79C7F8211DEADFF00057889A /* AppDelegate.swift in Sources */,
 				792879521DEC5C310051409B /* DemoViewController.swift in Sources */,
