@@ -18,7 +18,14 @@ public class FloatingSpeedWidgetManager: NSObject {
     private var attachmentBehavior: UIAttachmentBehavior!
     private var collisionBehavior: UICollisionBehavior!
     private var animator: UIDynamicAnimator!
-    private var targetViewController: UIViewController
+    private weak var targetViewController: UIViewController?
+    
+    // MARK: - NSObject
+    
+    deinit {
+        self.targetViewController = nil
+        self.floatingWidget = nil
+    }
     
     public init(withTargetViewController targetViewController: UIViewController, anchorPoint: FloatingSpeedWidgetAnchor = .bottomLeft, andWidgetSize widgetSize: CGFloat) {
         assert(targetViewController.view != nil, "FloatingSpeedWidgetManager must be initialized after targetViewController.view is loaded")
@@ -48,11 +55,19 @@ public class FloatingSpeedWidgetManager: NSObject {
         self.floatingWidget?.speed = speed
     }
 
+    public func removeWidget() {
+        self.animator.removeAllBehaviors()
+        self.floatingWidget.removeFromSuperview()
+        self.floatingWidget = nil
+        self.targetViewController = nil
+    }
     
     // MARK: - Actions
     
     @objc private func handlePan(recognizer: UIPanGestureRecognizer) {
-        let location = recognizer.location(in: self.targetViewController.view)
+        guard let targetViewController = self.targetViewController else { return }
+        
+        let location = recognizer.location(in: targetViewController.view)
         
         if recognizer.state == .began {
             self.animator.removeAllBehaviors()
