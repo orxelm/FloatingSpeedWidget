@@ -78,7 +78,7 @@ public class FloatingSpeedWidgetView: UIView {
     private func createSpeedLables() {
         // Number label
         let speedLable = UILabel()
-        speedLable.font = self.speedUnitFont ?? UIFont.systemFont(ofSize: 24)
+        speedLable.font = self.speedUnitFont ?? UIFont.systemFont(ofSize: 26)
         speedLable.center = self.centerPoint
         speedLable.textColor = UIColor.white
         speedLable.translatesAutoresizingMaskIntoConstraints = false
@@ -91,16 +91,20 @@ public class FloatingSpeedWidgetView: UIView {
         
         // Unit label
         let unitLable = UILabel()
-        unitLable.font = self.speedUnitFont ?? UIFont.systemFont(ofSize: 13)
+        unitLable.font = self.speedUnitFont ?? UIFont.systemFont(ofSize: 14)
         unitLable.center = self.centerPoint
         unitLable.textColor = UIColor.white
+        unitLable.textAlignment = .center
+        unitLable.adjustsFontSizeToFitWidth = true
+        unitLable.minimumScaleFactor = 0.7
         unitLable.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(unitLable)
         self.unitLable = unitLable
         
         let unitLableCenterxConstraint = NSLayoutConstraint(item: unitLable, attribute: .centerX, relatedBy: .equal, toItem: speedLable, attribute: .centerX, multiplier: 1, constant: 0)
-        let unitLableTopConstraint = NSLayoutConstraint(item: unitLable, attribute: .top, relatedBy: .equal, toItem: speedLable, attribute: .bottom, multiplier: 1, constant: -4)
-        self.addConstraints([unitLableCenterxConstraint, unitLableTopConstraint])
+        let unitLableTopConstraint = NSLayoutConstraint(item: unitLable, attribute: .top, relatedBy: .equal, toItem: speedLable, attribute: .bottom, multiplier: 1, constant: -6)
+        let unitLableWidthConstraint = NSLayoutConstraint(item: unitLable, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: self.bounds.width-20)
+        self.addConstraints([unitLableCenterxConstraint, unitLableTopConstraint, unitLableWidthConstraint])
     }
     
     private func setFormattedSpeed() {
