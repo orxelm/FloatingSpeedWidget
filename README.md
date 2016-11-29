@@ -4,6 +4,7 @@
 Swift 3.0
 
 ## Demo
+https://www.dropbox.com/s/1sxiwg1ogqdcqpd/demo.mov?dl=0
 
 ## Installation
 ### CocoaPods
@@ -30,7 +31,23 @@ $ pod install
 ```
 
 ## Usage
+### Swift
+```swift
+let floatingWidgetManager = FloatingSpeedWidgetManager(withTargetViewController: self, anchorPoint: .bottomLeft, andWidgetSize: 70)
+floatingWidgetManager.floatingWidgetView.speedNumberFont = UIFont(name: "customFont", size: 24)
+floatingWidgetManager.floatingWidgetView.speedUnitFont = UIFont(name: "customFont", size: 15)
+self.floatingWidgetManager = floatingWidgetManager
+```
 
+### Objecitve-C
+```objective-c
+FloatingSpeedWidgetManager *floatingWidgetManager = [[FloatingSpeedWidgetManager alloc] initWithTargetViewController:self
+                                                                                                         anchorPoint:FloatingSpeedWidgetAnchorBottomLeft 
+                                                                                                       andWidgetSize:70];
+floatingWidgetManager.floatingWidgetView.speedNumberFont = [UIFont yourCustomFontOfSize:25];
+floatingWidgetManager.floatingWidgetView.speedUnitFont = [UIFont yourCustomFontOfSize:14];
+self.floatingWidgetManager = floatingWidgetManager; // Important keep a strong reference to the manager
+```
 
 ##Author
 FloatingSpeedWidget is owned and maintained by Or Elmaliah. You can follow me on Twitter [@OrElm](https://twitter.com/orelm).
