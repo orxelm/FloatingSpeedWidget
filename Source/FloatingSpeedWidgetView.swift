@@ -9,12 +9,6 @@
 import UIKit
 import FormatterKit
 
-@objc public enum FloatingSpeedWidgetAnchor: Int {
-    case bottomLeft, topLeft, bottomRight, topRight
-}
-
-private let MARGIN_FROM_BOUNDS: CGFloat = 50
-
 public class FloatingSpeedWidgetView: UIView {
     
     /// The font for the (bigger) number label
@@ -45,11 +39,10 @@ public class FloatingSpeedWidgetView: UIView {
     
     // MARK: - Init
     
-    init(size: CGSize, anchorPoint: FloatingSpeedWidgetAnchor) {
+    init(size: CGSize, anchorPoint: CGPoint) {
         let size = min(size.width, size.height)
-        let anchor = FloatingSpeedWidgetView.anchorPoint(fromFloatingSpeedWidgetAnchor: anchorPoint, andSize: size)
         
-        super.init(frame: CGRect(x: anchor.x, y: anchor.y, width: size, height: size))
+        super.init(frame: CGRect(x: anchorPoint.x, y: anchorPoint.y, width: size, height: size))
 
         // Big Circle
         let borderWidth: CGFloat = 2
@@ -65,7 +58,7 @@ public class FloatingSpeedWidgetView: UIView {
         self.layer.shadowOpacity = 1
         self.layer.shadowOffset = CGSize(width: 0, height: 1)
         
-        self.createSpeedLables()
+        self.createSpeedLabels()
         self.setFormattedSpeed()
     }
     
@@ -75,7 +68,7 @@ public class FloatingSpeedWidgetView: UIView {
     
     // MARK: - Private helpers
     
-    private func createSpeedLables() {
+    private func createSpeedLabels() {
         // Number label
         let speedLable = UILabel()
         speedLable.font = self.speedUnitFont ?? UIFont.systemFont(ofSize: 26)
@@ -118,24 +111,6 @@ public class FloatingSpeedWidgetView: UIView {
             self.speedLable.text = speedComponents.first
             self.unitLable.text = speedComponents.last
         }
-    }
-    
-    private static func anchorPoint(fromFloatingSpeedWidgetAnchor floatingSpeedWidgetAnchor: FloatingSpeedWidgetAnchor, andSize size: CGFloat) -> CGPoint {
-        let bounds = UIScreen.main.bounds
-        var anchor = CGPoint(x: 0, y: 0)
-        
-        switch floatingSpeedWidgetAnchor {
-        case .bottomLeft:
-            anchor = CGPoint(x: MARGIN_FROM_BOUNDS, y: bounds.height-size-MARGIN_FROM_BOUNDS)
-        case .topLeft:
-            anchor = CGPoint(x: MARGIN_FROM_BOUNDS, y: MARGIN_FROM_BOUNDS)
-        case .bottomRight:
-            anchor = CGPoint(x: bounds.width-size-MARGIN_FROM_BOUNDS, y: bounds.height-size-MARGIN_FROM_BOUNDS)
-        case .topRight:
-            anchor = CGPoint(x: bounds.width-size-MARGIN_FROM_BOUNDS, y: MARGIN_FROM_BOUNDS)
-        }
-        
-        return anchor
     }
 }
 

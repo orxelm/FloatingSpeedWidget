@@ -12,11 +12,13 @@ public class FloatingSpeedWidgetManager: NSObject {
     
     /// The circular widget view
     public private(set) var floatingWidgetView: FloatingSpeedWidgetView!
+    /// The target view controller which present the widget
+    public private(set) weak var targetViewController: UIViewController?
+    
     private var snapBehavior: UISnapBehavior!
     private var attachmentBehavior: UIAttachmentBehavior!
     private var collisionBehavior: UICollisionBehavior!
     private var animator: UIDynamicAnimator!
-    private weak var targetViewController: UIViewController?
     
     // MARK: - NSObject
     
@@ -25,7 +27,7 @@ public class FloatingSpeedWidgetManager: NSObject {
         self.floatingWidgetView = nil
     }
     
-    public init(withTargetViewController targetViewController: UIViewController, anchorPoint: FloatingSpeedWidgetAnchor = .bottomLeft, andWidgetSize widgetSize: CGFloat) {
+    public init(withTargetViewController targetViewController: UIViewController, anchorPoint: CGPoint, andWidgetSize widgetSize: CGFloat) {
         assert(targetViewController.view != nil, "FloatingSpeedWidgetManager must be initialized after targetViewController.view is loaded")
 
         self.targetViewController = targetViewController
@@ -45,7 +47,7 @@ public class FloatingSpeedWidgetManager: NSObject {
         let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(handlePan(recognizer:)))
         self.floatingWidgetView.addGestureRecognizer(panGestureRecognizer)
         
-        UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.5, options: UIViewAnimationOptions.curveEaseIn, animations: { () -> Void in
+        UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.5, options: .curveEaseIn, animations: { () -> Void in
             self.floatingWidgetView.alpha = 1
             self.floatingWidgetView.transform = CGAffineTransform(scaleX: 1, y: 1)
         }, completion: nil)

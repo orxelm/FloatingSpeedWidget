@@ -33,16 +33,16 @@ $ pod install
 ## Usage
 ### Swift
 ```swift
-let floatingWidgetManager = FloatingSpeedWidgetManager(withTargetViewController: self, anchorPoint: .bottomLeft, andWidgetSize: 70)
+self.floatingSpeedWidgetManager = FloatingSpeedWidgetManager(withTargetViewController: self, anchorPoint: CGPoint(x: 30, y: UIScreen.main.bounds.height - 100), andWidgetSize: 70)
 floatingWidgetManager.floatingWidgetView.speedNumberFont = UIFont(name: "customFont", size: 24)
 floatingWidgetManager.floatingWidgetView.speedUnitFont = UIFont(name: "customFont", size: 15)
-self.floatingWidgetManager = floatingWidgetManager
+self.floatingWidgetManager = floatingWidgetManager // Important keep a strong reference to the manager
 ```
 
 ### Objecitve-C
 ```objective-c
 FloatingSpeedWidgetManager *floatingWidgetManager = [[FloatingSpeedWidgetManager alloc] initWithTargetViewController:self
-                                                                                                         anchorPoint:FloatingSpeedWidgetAnchorBottomLeft 
+                                                                                                         anchorPoint:CGPointMake(30, 100) 
                                                                                                        andWidgetSize:70];
 floatingWidgetManager.floatingWidgetView.speedNumberFont = [UIFont yourCustomFontOfSize:25];
 floatingWidgetManager.floatingWidgetView.speedUnitFont = [UIFont yourCustomFontOfSize:14];
